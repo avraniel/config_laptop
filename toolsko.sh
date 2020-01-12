@@ -126,7 +126,7 @@ yay -S papirus-icon-theme --noconfirm --needed
 yay -S arc-icon-theme --noconfirm --needed
 yay -S adapta-gtk-theme --noconfirm --needed
 
-yay -S breeze-obsidian-cursor-theme --noconfirm --needed
+#yay -S breeze-obsidian-cursor-theme --noconfirm --needed
 
 yay -S faba-icon-theme --noconfirm --needed
 yay -S halo-icons-git --noconfirm --needed
@@ -135,10 +135,12 @@ yay -S paper-icon-theme --noconfirm --needed
 yay -S zafiro-icon-theme --noconfirm --needed
 yay -S xcursor-simpleandsoft --noconfirm --needed
 yay -S popcorntime-bin --noconfirm --needed
+yay -S nvidia-340xx-lts --noconfirm --needed
 
-cp -Rf ~/config/.config/{termite,neofetch,polybar,openbox,variety,ranger} ~/.config
-cp ~/config/.config/.bashrc-personal ~/.bashrc-personal
-cp ~/config/.config/pipes-diagonal ~/.bin
+cp -Rf ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger} ~/.config
+cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
+cp ~/config_laptop/.config/pipes-diagonal ~/.bin
+cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
 
 ~/.bin/main/700-fun-apps-for-screenshots-v6.sh
 
