@@ -1,0 +1,2 @@
+alias myconfig="cp -Rfv ~/config/.config/{plank,thunar,neofetch,openbox,variety,ranger,polybar} ~/.config && cp ~/config/.config/picom.conf ~/.config"
+
