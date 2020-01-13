@@ -1,113 +1,235 @@
-INFO: 2019-12-05 19:50:45,553: perform_upgrade() 'Last run version was 0.7.2 or earlier, current version is 0.7.2'
-INFO: 2019-12-05 19:50:45,751: process_command() 'Received command: []'
-INFO: 2019-12-05 19:50:45,755: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
-INFO: 2019-12-05 19:50:45,772: load() 'Jumble loading'
-INFO: 2019-12-05 19:50:45,773: _walk_modules() 'Jumble loading module in __init__ from /usr/share/variety/plugins/__init__.py'
-INFO: 2019-12-05 19:50:45,774: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/share/variety/plugins/quotes/QuotationsPageSource.py'
-INFO: 2019-12-05 19:50:45,786: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': 'Fetches quotes from TheQuotationsPage.com', 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-05 19:50:45,787: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/share/variety/plugins/quotes/GoodreadsSource.py'
-INFO: 2019-12-05 19:50:45,789: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': 'Fetches quotes from Goodreads.com', 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-05 19:50:45,789: _walk_modules() 'Jumble loading module in __init__ from /usr/share/variety/plugins/quotes/__init__.py'
-INFO: 2019-12-05 19:50:45,790: _walk_modules() 'Jumble loading module in QuotesDaddySource from /usr/share/variety/plugins/quotes/QuotesDaddySource.py'
-INFO: 2019-12-05 19:50:45,791: load() 'Jumble found plugin class: <class 'QuotesDaddySource.QuotesDaddySource'>: {'name': 'QuotesDaddy', 'description': "Fetches quotes from QuotesDaddy's daily quotes RSS feed.\nDoes not support searching by tags or authors.", 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-05 19:50:45,791: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/share/variety/plugins/quotes/LocalFilesSource.py'
-INFO: 2019-12-05 19:50:45,793: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: ~/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-05 19:50:45,798: log_options() 'Loaded options:'
-INFO: 2019-12-05 19:50:45,798: log_options() 'change_enabled = True'
-INFO: 2019-12-05 19:50:45,798: log_options() 'change_interval = 1800'
-INFO: 2019-12-05 19:50:45,798: log_options() 'change_on_start = True'
-INFO: 2019-12-05 19:50:45,798: log_options() 'clipboard_enabled = False'
-INFO: 2019-12-05 19:50:45,798: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
-INFO: 2019-12-05 19:50:45,798: log_options() 'clipboard_use_whitelist = True'
-INFO: 2019-12-05 19:50:45,798: log_options() 'clock_date_font = Ubuntu Condensed, 30'
-INFO: 2019-12-05 19:50:45,798: log_options() 'clock_enabled = False'
-INFO: 2019-12-05 19:50:45,798: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
-INFO: 2019-12-05 19:50:45,798: log_options() 'clock_font = Ubuntu Condensed, 70'
-INFO: 2019-12-05 19:50:45,799: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
-INFO: 2019-12-05 19:50:45,799: log_options() 'copyto_enabled = False'
-INFO: 2019-12-05 19:50:45,799: log_options() 'copyto_folder = Default'
-INFO: 2019-12-05 19:50:45,799: log_options() 'desired_color = [160, 160, 160]'
-INFO: 2019-12-05 19:50:45,799: log_options() 'desired_color_enabled = False'
-INFO: 2019-12-05 19:50:45,799: log_options() 'download_enabled = False'
-INFO: 2019-12-05 19:50:45,799: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
-INFO: 2019-12-05 19:50:45,799: log_options() 'download_interval = 600'
-INFO: 2019-12-05 19:50:45,799: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
-INFO: 2019-12-05 19:50:45,799: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
-INFO: 2019-12-05 19:50:45,799: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
-INFO: 2019-12-05 19:50:45,799: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
-INFO: 2019-12-05 19:50:45,799: log_options() 'icon = Light'
-INFO: 2019-12-05 19:50:45,799: log_options() 'lightness_enabled = False'
-INFO: 2019-12-05 19:50:45,799: log_options() 'lightness_mode = 0'
-INFO: 2019-12-05 19:50:45,800: log_options() 'min_rating = 4'
-INFO: 2019-12-05 19:50:45,800: log_options() 'min_rating_enabled = False'
-INFO: 2019-12-05 19:50:45,800: log_options() 'min_size = 80'
-INFO: 2019-12-05 19:50:45,800: log_options() 'min_size_enabled = True'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quota_enabled = False'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quota_size = 500'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_authors = '
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_bg_color = [80, 80, 80]'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_bg_opacity = 55'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_change_enabled = False'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_change_interval = 300'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_disabled_sources = ['QuotesDaddy']'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_enabled = False'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
-INFO: 2019-12-05 19:50:45,800: log_options() 'quotes_font = Bitstream Charter 30'
-INFO: 2019-12-05 19:50:45,801: log_options() 'quotes_hpos = 100'
-INFO: 2019-12-05 19:50:45,801: log_options() 'quotes_tags = '
-INFO: 2019-12-05 19:50:45,801: log_options() 'quotes_text_color = [255, 255, 255]'
-INFO: 2019-12-05 19:50:45,801: log_options() 'quotes_text_shadow = False'
-INFO: 2019-12-05 19:50:45,801: log_options() 'quotes_vpos = 40'
-INFO: 2019-12-05 19:50:45,801: log_options() 'quotes_width = 70'
-INFO: 2019-12-05 19:50:45,801: log_options() 'safe_mode = False'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_custom_enabled = False'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_downloads_enabled = False'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_fade = 0.4'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_favorites_enabled = True'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_mode = Fullscreen'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_monitor = All'
-INFO: 2019-12-05 19:50:45,801: log_options() 'slideshow_pan = 0.05'
-INFO: 2019-12-05 19:50:45,802: log_options() 'slideshow_seconds = 6.0'
-INFO: 2019-12-05 19:50:45,802: log_options() 'slideshow_sort_order = Random'
-INFO: 2019-12-05 19:50:45,802: log_options() 'slideshow_sources_enabled = True'
-INFO: 2019-12-05 19:50:45,802: log_options() 'slideshow_zoom = 0.2'
-INFO: 2019-12-05 19:50:45,802: log_options() 'smart_enabled = False'
-INFO: 2019-12-05 19:50:45,802: log_options() 'smart_notice_shown = True'
-INFO: 2019-12-05 19:50:45,802: log_options() 'smart_register_shown = False'
-INFO: 2019-12-05 19:50:45,802: log_options() 'sources = [[True, 3, 'The Favorites folder'], [False, 4, 'The Fetched folder'], [True, 2, '/usr/share/backgrounds'], [False, 6, 'Random wallpapers from Desktoppr.co'], [False, 15, 'Bing Photo of the Day'], [False, 16, 'High-resolution photos from Unsplash.com'], [False, 8, "NASA's Astronomy Picture of the Day"], [False, 11, 'World Sunlight Map - live wallpaper from Die.net'], [False, 7, 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;']]'
-INFO: 2019-12-05 19:50:45,802: log_options() 'stats_enabled = True'
-INFO: 2019-12-05 19:50:45,802: log_options() 'stats_notice_shown = True'
-INFO: 2019-12-05 19:50:45,802: log_options() 'sync_enabled = True'
-INFO: 2019-12-05 19:50:45,802: log_options() 'use_landscape_enabled = True'
-INFO: 2019-12-05 19:50:45,802: reload_config() 'No need to clear prepared queue'
-INFO: 2019-12-05 19:50:45,803: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 1800'
-INFO: 2019-12-05 19:50:45,803: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/Protocol-19-Glaucous-Blue-1920x1080-HD.jpg'
-INFO: 2019-12-05 19:50:45,810: regular_change_thread() 'regular_change thread running'
-INFO: 2019-12-05 19:50:45,810: prepare_thread() 'Prepare thread running'
-INFO: 2019-12-05 19:50:45,810: prepare_thread() 'Prepared buffer contains 0 images'
-INFO: 2019-12-05 19:50:45,810: prepare_thread() 'Preparing some images'
-INFO: 2019-12-05 19:50:45,843: prepare_thread() 'After search prepared buffer contains 27 images'
-INFO: 2019-12-05 19:50:45,880: update_indicator_icon() 'Creating indicator'
-WARNING: 2019-12-05 19:50:45,894: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
-INFO: 2019-12-05 19:50:45,895: create_indicator() 'indicator backend: fallback tray'
-INFO: 2019-12-05 19:50:45,904: do_set_wp() 'Calling do_set_wp with /usr/share/backgrounds/arcolinux/Protocol-19-Glaucous-Blue-1920x1080-HD.jpg, time: 1575571845.9039881'
-INFO: 2019-12-05 19:50:45,918: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/Protocol-19-Glaucous-Blue-1920x1080-HD.jpg'
-INFO: 2019-12-05 19:50:45,963: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
-INFO: 2019-12-05 19:50:45,967: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/Protocol-19-Glaucous-Blue-1920x1080-HD.jpg'
-INFO: 2019-12-05 19:50:48,526: reload() 'Reloading preferences dialog'
-INFO: 2019-12-05 19:50:50,810: set_wallpaper() 'Calling set_wallpaper with /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:50:50,811: prepare_thread() 'Prepared buffer contains 26 images'
-INFO: 2019-12-05 19:50:50,811: do_set_wp() 'Calling do_set_wp with /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg, time: 1575571850.811618'
-INFO: 2019-12-05 19:50:50,835: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:51:05,829: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-05 19:51:05,847: server_options_thread() 'Could not fetch Variety serverside options'
+INFO: 2020-01-13 19:45:43,110: main() 'Using profile folder /home/niel/.config/variety/'
+INFO: 2020-01-13 19:45:43,116: perform_upgrade() 'Last run version was 0.8.2 or earlier, current version is 0.8.2'
+INFO: 2020-01-13 19:45:43,425: process_command() 'Received command: ['--profile', '/home/niel/.config/variety/', '%U']'
+INFO: 2020-01-13 19:45:43,429: process_command() 'Treating free arguments as urls: ['%U']'
+INFO: 2020-01-13 19:45:43,430: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
+INFO: 2020-01-13 19:45:43,474: start() 'Using data_path /usr/share/variety'
+INFO: 2020-01-13 19:45:43,475: load() 'Jumble loading'
+INFO: 2020-01-13 19:45:43,476: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.8/site-packages/variety/plugins/builtin/__init__.py'
+INFO: 2020-01-13 19:45:43,479: _walk_modules() 'Jumble loading module in FortuneSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/FortuneSource.py'
+INFO: 2020-01-13 19:45:43,480: load() 'Jumble found plugin class: <class 'FortuneSource.FortuneSource'>: {'name': 'UNIX fortune program', 'description': 'Displays quotes using the UNIX fortune program. You may want to install additional fortune packs, e.g. fortunes-bofh-excuses.', 'author': 'Dan Jones', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,482: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/GoodreadsSource.py'
+INFO: 2020-01-13 19:45:43,505: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': 'Fetches quotes from Goodreads.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,506: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/__init__.py'
+INFO: 2020-01-13 19:45:43,508: _walk_modules() 'Jumble loading module in UrbanDictionarySource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/UrbanDictionarySource.py'
+INFO: 2020-01-13 19:45:43,509: load() 'Jumble found plugin class: <class 'UrbanDictionarySource.UrbanDictionarySource'>: {'name': 'Urban Dictionary', 'description': 'Displays definitions from Urban Dictionary', 'author': 'James Miller', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,511: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/QuotationsPageSource.py'
+INFO: 2020-01-13 19:45:43,512: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': 'Fetches quotes from TheQuotationsPage.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,513: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/LocalFilesSource.py'
+INFO: 2020-01-13 19:45:43,515: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: /home/niel/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,517: _walk_modules() 'Jumble loading module in WallhavenSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/WallhavenSource.py'
+INFO: 2020-01-13 19:45:43,524: load() 'Jumble found plugin class: <class 'WallhavenSource.WallhavenSource'>: {'name': 'MediaRSSSource', 'description': 'Configurable source for fetching images from Wallhaven.cc', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,526: _walk_modules() 'Jumble loading module in EarthviewDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py'
+INFO: 2020-01-13 19:45:43,527: load() 'Jumble found plugin class: <class 'EarthviewDownloader.EarthviewDownloader'>: {'name': 'EarthviewDownloader', 'description': 'Google Earth View Wallpapers', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,528: _walk_modules() 'Jumble loading module in MediaRSSSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/MediaRSSSource.py'
+INFO: 2020-01-13 19:45:43,531: load() 'Jumble found plugin class: <class 'MediaRSSSource.MediaRSSSource'>: {'name': 'MediaRSSSource', 'description': 'Configurable source for fetching images from MediaRSS feeds', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,532: _walk_modules() 'Jumble loading module in RedditSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/RedditSource.py'
+INFO: 2020-01-13 19:45:43,536: load() 'Jumble found plugin class: <class 'RedditSource.RedditSource'>: {'name': 'RedditSource', 'description': 'Configurable source for fetching images from Reddit', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,537: _walk_modules() 'Jumble loading module in ChromeOSWallpapersDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/ChromeOSWallpapersDownloader.py'
+INFO: 2020-01-13 19:45:43,538: load() 'Jumble found plugin class: <class 'ChromeOSWallpapersDownloader.ChromeOSWallpapersDownloader'>: {'name': 'ChromeOsWallpapersDownloader', 'description': 'Chrome OS Wallpapers', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,539: _walk_modules() 'Jumble loading module in APODDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/APODDownloader.py'
+INFO: 2020-01-13 19:45:43,540: load() 'Jumble found plugin class: <class 'APODDownloader.APODDownloader'>: {'name': 'APODDownloader', 'description': 'NASA Astro Pic of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,541: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/__init__.py'
+INFO: 2020-01-13 19:45:43,542: _walk_modules() 'Jumble loading module in UnsplashDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/UnsplashDownloader.py'
+INFO: 2020-01-13 19:45:43,543: load() 'Jumble found plugin class: <class 'UnsplashDownloader.UnsplashDownloader'>: {'name': 'UnsplashDownloader', 'description': 'High-resolution photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,544: _walk_modules() 'Jumble loading module in BingDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/BingDownloader.py'
+INFO: 2020-01-13 19:45:43,546: load() 'Jumble found plugin class: <class 'BingDownloader.BingDownloader'>: {'name': 'BingDownloader', 'description': 'Bing Photo of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,546: _walk_modules() 'Jumble loading module in RedditDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/RedditDownloader.py'
+INFO: 2020-01-13 19:45:43,547: _walk_modules() 'Jumble loading module in EarthDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/EarthDownloader.py'
+INFO: 2020-01-13 19:45:43,549: load() 'Jumble found plugin class: <class 'EarthDownloader.EarthDownloader'>: {'name': 'EarthDownloader', 'description': 'World Sunlight Map - live wallpaper from Die.net', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,549: _walk_modules() 'Jumble loading module in MediaRSSDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/MediaRSSDownloader.py'
+INFO: 2020-01-13 19:45:43,551: _walk_modules() 'Jumble loading module in DesktopprDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/DesktopprDownloader.py'
+INFO: 2020-01-13 19:45:43,552: load() 'Jumble found plugin class: <class 'DesktopprDownloader.DesktopprDownloader'>: {'name': 'DesktopprDownloader', 'description': 'Random wallpapers from Desktoppr.co', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,553: _walk_modules() 'Jumble loading module in WallhavenDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py'
+INFO: 2020-01-13 19:45:43,554: _walk_modules() 'Jumble loading module in UnsplashConfigurableSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/UnsplashConfigurableSource.py'
+INFO: 2020-01-13 19:45:43,557: load() 'Jumble found plugin class: <class 'UnsplashConfigurableSource.UnsplashConfigurableSource'>: {'name': 'UnsplashConfigurableSource', 'description': 'Configurable source for fetching photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-01-13 19:45:43,566: reload_config() 'Creating new downloader for type desktoppr, location Random wallpapers from Desktoppr.co'
+INFO: 2020-01-13 19:45:43,566: reload_config() 'Creating new downloader for type chromeos, location Chrome OS Wallpapers'
+INFO: 2020-01-13 19:45:43,566: reload_config() 'Creating new downloader for type earthview, location Google Earth View Wallpapers'
+INFO: 2020-01-13 19:45:43,575: log_options() 'Loaded options:'
+INFO: 2020-01-13 19:45:43,575: log_options() 'change_enabled = True'
+INFO: 2020-01-13 19:45:43,575: log_options() 'change_interval = 1800'
+INFO: 2020-01-13 19:45:43,575: log_options() 'change_on_start = True'
+INFO: 2020-01-13 19:45:43,576: log_options() 'clipboard_enabled = False'
+INFO: 2020-01-13 19:45:43,576: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2020-01-13 19:45:43,576: log_options() 'clipboard_use_whitelist = True'
+INFO: 2020-01-13 19:45:43,576: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2020-01-13 19:45:43,576: log_options() 'clock_enabled = False'
+INFO: 2020-01-13 19:45:43,576: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2020-01-13 19:45:43,576: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2020-01-13 19:45:43,576: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
+INFO: 2020-01-13 19:45:43,576: log_options() 'copyto_enabled = False'
+INFO: 2020-01-13 19:45:43,576: log_options() 'copyto_folder = Default'
+INFO: 2020-01-13 19:45:43,576: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2020-01-13 19:45:43,577: log_options() 'desired_color_enabled = False'
+INFO: 2020-01-13 19:45:43,577: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
+INFO: 2020-01-13 19:45:43,577: log_options() 'download_preference_ratio = 0.9'
+INFO: 2020-01-13 19:45:43,577: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
+INFO: 2020-01-13 19:45:43,577: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2020-01-13 19:45:43,577: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
+INFO: 2020-01-13 19:45:43,577: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2020-01-13 19:45:43,577: log_options() 'icon = Light'
+INFO: 2020-01-13 19:45:43,577: log_options() 'lightness_enabled = False'
+INFO: 2020-01-13 19:45:43,577: log_options() 'lightness_mode = 0'
+INFO: 2020-01-13 19:45:43,577: log_options() 'min_rating = 4'
+INFO: 2020-01-13 19:45:43,577: log_options() 'min_rating_enabled = False'
+INFO: 2020-01-13 19:45:43,578: log_options() 'min_size = 80'
+INFO: 2020-01-13 19:45:43,578: log_options() 'min_size_enabled = True'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quota_enabled = False'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quota_size = 500'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quotes_authors = '
+INFO: 2020-01-13 19:45:43,578: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quotes_bg_opacity = 55'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quotes_change_enabled = False'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quotes_change_interval = 300'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quotes_disabled_sources = ['QuotesDaddy', 'Urban Dictionary']'
+INFO: 2020-01-13 19:45:43,578: log_options() 'quotes_enabled = False'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_hpos = 100'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_max_length = 250'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_tags = '
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_text_shadow = False'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_vpos = 40'
+INFO: 2020-01-13 19:45:43,579: log_options() 'quotes_width = 70'
+INFO: 2020-01-13 19:45:43,579: log_options() 'safe_mode = False'
+INFO: 2020-01-13 19:45:43,579: log_options() 'slideshow_custom_enabled = False'
+INFO: 2020-01-13 19:45:43,579: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_fade = 0.4'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_monitor = All'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_pan = 0.05'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_seconds = 6.0'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_sort_order = Random'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_sources_enabled = True'
+INFO: 2020-01-13 19:45:43,580: log_options() 'slideshow_zoom = 0.2'
+INFO: 2020-01-13 19:45:43,580: log_options() 'smart_enabled = False'
+INFO: 2020-01-13 19:45:43,581: log_options() 'smart_notice_shown = True'
+INFO: 2020-01-13 19:45:43,581: log_options() 'smart_register_shown = False'
+INFO: 2020-01-13 19:45:43,581: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'desktoppr', 'Random wallpapers from Desktoppr.co'], [False, 'bing', 'Bing Photo of the Day'], [False, 'unsplash', 'High-resolution photos from Unsplash.com'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [False, 'earth', 'World Sunlight Map - live wallpaper from Die.net'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [True, 'folder', '/home/niel/DATA/wallpapers'], [True, 'chromeos', 'Chrome OS Wallpapers'], [True, 'earthview', 'Google Earth View Wallpapers']]'
+INFO: 2020-01-13 19:45:43,581: log_options() 'stats_enabled = True'
+INFO: 2020-01-13 19:45:43,581: log_options() 'stats_notice_shown = True'
+INFO: 2020-01-13 19:45:43,581: log_options() 'sync_enabled = True'
+INFO: 2020-01-13 19:45:43,581: log_options() 'use_landscape_enabled = True'
+INFO: 2020-01-13 19:45:43,581: reload_config() 'No need to clear prepared queue'
+INFO: 2020-01-13 19:45:43,581: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Mitsinjo, Madagascar (ID-1746).jpg'
+INFO: 2020-01-13 19:45:43,598: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 1800'
+INFO: 2020-01-13 19:45:43,598: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Mitsinjo, Madagascar (ID-1746).jpg'
+INFO: 2020-01-13 19:45:43,609: regular_change_thread() 'regular_change thread running'
+INFO: 2020-01-13 19:45:43,610: prepare_thread() 'Prepare thread running'
+INFO: 2020-01-13 19:45:43,610: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2020-01-13 19:45:43,610: prepare_thread() 'Preparing some images'
+INFO: 2020-01-13 19:45:43,625: update_indicator_icon() 'Creating indicator'
+WARNING: 2020-01-13 19:45:43,647: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
+INFO: 2020-01-13 19:45:43,652: create_indicator() 'indicator backend: fallback tray'
+INFO: 2020-01-13 19:45:43,710: do_set_wp() 'Calling do_set_wp with /home/niel/.config/variety/Downloaded/Earth View/Mitsinjo, Madagascar (ID-1746).jpg, time: 1578941143.710524'
+INFO: 2020-01-13 19:45:43,740: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2020-01-13 19:45:43,793: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Mitsinjo, Madagascar (ID-1746).jpg'
+INFO: 2020-01-13 19:45:43,806: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:45:43,847: prepare_thread() 'After search prepared buffer contains 81 images'
+INFO: 2020-01-13 19:45:45,858: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:45:46,053: reload() 'Reloading preferences dialog'
+INFO: 2020-01-13 19:45:48,431: fetch() 'Trying to fetch URL %U to /home/niel/.config/variety/Fetched '
+ERROR: 2020-01-13 19:45:48,449: fetch() 'Fetch failed for URL file://%U'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/ImageFetcher.py", line 72, in fetch
+    r = Util.request(url, stream=True)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for 'file://%U'
+INFO: 2020-01-13 19:45:48,610: set_wallpaper() 'Calling set_wallpaper with /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:45:48,611: prepare_thread() 'Prepared buffer contains 81 images'
+INFO: 2020-01-13 19:45:48,612: do_set_wp() 'Calling do_set_wp with /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg, time: 1578941148.612352'
+INFO: 2020-01-13 19:45:48,639: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:45:48,646: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:45:50,612: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:45:50,613: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:45:50,613: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2020-01-13 19:45:50,613: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2020-01-13 19:45:50,614: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2020-01-13 19:45:50,614: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2020-01-13 19:45:50,614: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2020-01-13 19:45:50,614: download_one() 'Earth View: Queue size: 0'
+INFO: 2020-01-13 19:45:50,614: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2020-01-13 19:45:50,614: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2020-01-13 19:45:50,614: download_one() 'Earth View: Filling queue'
+ERROR: 2020-01-13 19:45:50,630: download_one_from() 'Could not download wallpaper:'
 Traceback (most recent call last):
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
     conn = connection.create_connection(
   File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 914, in getaddrinfo
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f43b05f63a0>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /limhenry/earthview/3cd868a932cd652c4373c0f6ea8618a96b08be4e/wallpaper%20changer/data.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f43b05f63a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1159, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.8/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py", line 57, in fill_queue
+    queue = Util.fetch_json(DATA_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /limhenry/earthview/3cd868a932cd652c4373c0f6ea8618a96b08be4e/wallpaper%20changer/data.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f43b05f63a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-01-13 19:46:03,640: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-01-13 19:46:03,644: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
 socket.gaierror: [Errno -2] Name or service not known
 
@@ -132,7 +254,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
     raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0502fa5f40>: Failed to establish a new connection: [Errno -2] Name or service not known
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f43bc19ccd0>: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -143,17 +265,17 @@ Traceback (most recent call last):
     retries = retries.increment(
   File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5f40>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43bc19ccd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1087, in server_options_thread
     self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
-    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
   File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
@@ -162,15 +284,15 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5f40>: Failed to establish a new connection: [Errno -2] Name or service not known'))
-INFO: 2019-12-05 19:51:35,859: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-05 19:51:35,863: server_options_thread() 'Could not fetch Variety serverside options'
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43bc19ccd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-01-13 19:46:33,676: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-01-13 19:46:33,681: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
     conn = connection.create_connection(
   File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 914, in getaddrinfo
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
 socket.gaierror: [Errno -2] Name or service not known
 
@@ -195,7 +317,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
     raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0502fa5dc0>: Failed to establish a new connection: [Errno -2] Name or service not known
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f43b07ca640>: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -206,17 +328,17 @@ Traceback (most recent call last):
     retries = retries.increment(
   File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5dc0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07ca640>: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1087, in server_options_thread
     self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
-    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
   File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
@@ -225,15 +347,15 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5dc0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
-INFO: 2019-12-05 19:52:05,892: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-05 19:52:05,896: server_options_thread() 'Could not fetch Variety serverside options'
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07ca640>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-01-13 19:47:03,710: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-01-13 19:47:03,715: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
     conn = connection.create_connection(
   File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 914, in getaddrinfo
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
 socket.gaierror: [Errno -2] Name or service not known
 
@@ -258,7 +380,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
     raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0502fa5f10>: Failed to establish a new connection: [Errno -2] Name or service not known
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f43b07ca1f0>: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -269,17 +391,17 @@ Traceback (most recent call last):
     retries = retries.increment(
   File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5f10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07ca1f0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1087, in server_options_thread
     self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
-    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
   File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
@@ -288,15 +410,15 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5f10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
-INFO: 2019-12-05 19:52:35,927: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-05 19:52:35,930: server_options_thread() 'Could not fetch Variety serverside options'
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07ca1f0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-01-13 19:47:33,740: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-01-13 19:47:33,744: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
     conn = connection.create_connection(
   File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 914, in getaddrinfo
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
 socket.gaierror: [Errno -2] Name or service not known
 
@@ -321,7 +443,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
     raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0502fa5f40>: Failed to establish a new connection: [Errno -2] Name or service not known
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f43b07c9c40>: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -332,17 +454,17 @@ Traceback (most recent call last):
     retries = retries.increment(
   File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5f40>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07c9c40>: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1087, in server_options_thread
     self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
-    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
   File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
@@ -351,15 +473,15 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5f40>: Failed to establish a new connection: [Errno -2] Name or service not known'))
-INFO: 2019-12-05 19:53:05,949: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-05 19:53:05,954: server_options_thread() 'Could not fetch Variety serverside options'
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07c9c40>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-01-13 19:48:03,770: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-01-13 19:48:03,774: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
     conn = connection.create_connection(
   File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 914, in getaddrinfo
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
 socket.gaierror: [Errno -2] Name or service not known
 
@@ -384,7 +506,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
     raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f0502fa5c70>: Failed to establish a new connection: [Errno -2] Name or service not known
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f43b07c91f0>: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -395,17 +517,17 @@ Traceback (most recent call last):
     retries = retries.increment(
   File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5c70>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07c91f0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1087, in server_options_thread
     self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
-    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
   File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
@@ -414,332 +536,504 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0502fa5c70>: Failed to establish a new connection: [Errno -2] Name or service not known'))
-INFO: 2019-12-05 19:53:29,228: process_command() 'Received command: ['--preferences']'
-INFO: 2019-12-05 19:53:29,235: reload() 'Reloading preferences dialog'
-INFO: 2019-12-05 19:53:57,019: apply() 'Applying preferences'
-INFO: 2019-12-05 19:53:57,036: set_visible() 'Showing status icon'
-INFO: 2019-12-05 19:53:57,036: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
-INFO: 2019-12-05 19:53:57,037: log_options() 'Loaded options:'
-INFO: 2019-12-05 19:53:57,037: log_options() 'change_enabled = True'
-INFO: 2019-12-05 19:53:57,037: log_options() 'change_interval = 1800'
-INFO: 2019-12-05 19:53:57,037: log_options() 'change_on_start = True'
-INFO: 2019-12-05 19:53:57,037: log_options() 'clipboard_enabled = False'
-INFO: 2019-12-05 19:53:57,037: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
-INFO: 2019-12-05 19:53:57,037: log_options() 'clipboard_use_whitelist = True'
-INFO: 2019-12-05 19:53:57,037: log_options() 'clock_date_font = Ubuntu Condensed, 30'
-INFO: 2019-12-05 19:53:57,038: log_options() 'clock_enabled = False'
-INFO: 2019-12-05 19:53:57,038: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
-INFO: 2019-12-05 19:53:57,038: log_options() 'clock_font = Ubuntu Condensed, 70'
-INFO: 2019-12-05 19:53:57,038: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
-INFO: 2019-12-05 19:53:57,038: log_options() 'copyto_enabled = False'
-INFO: 2019-12-05 19:53:57,038: log_options() 'copyto_folder = Default'
-INFO: 2019-12-05 19:53:57,038: log_options() 'desired_color = [160, 160, 160]'
-INFO: 2019-12-05 19:53:57,038: log_options() 'desired_color_enabled = False'
-INFO: 2019-12-05 19:53:57,038: log_options() 'download_enabled = False'
-INFO: 2019-12-05 19:53:57,039: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
-INFO: 2019-12-05 19:53:57,039: log_options() 'download_interval = 600'
-INFO: 2019-12-05 19:53:57,039: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
-INFO: 2019-12-05 19:53:57,039: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
-INFO: 2019-12-05 19:53:57,039: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
-INFO: 2019-12-05 19:53:57,039: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
-INFO: 2019-12-05 19:53:57,039: log_options() 'icon = Light'
-INFO: 2019-12-05 19:53:57,039: log_options() 'lightness_enabled = False'
-INFO: 2019-12-05 19:53:57,040: log_options() 'lightness_mode = 0'
-INFO: 2019-12-05 19:53:57,040: log_options() 'min_rating = 4'
-INFO: 2019-12-05 19:53:57,040: log_options() 'min_rating_enabled = False'
-INFO: 2019-12-05 19:53:57,040: log_options() 'min_size = 80'
-INFO: 2019-12-05 19:53:57,040: log_options() 'min_size_enabled = True'
-INFO: 2019-12-05 19:53:57,040: log_options() 'quota_enabled = False'
-INFO: 2019-12-05 19:53:57,040: log_options() 'quota_size = 500'
-INFO: 2019-12-05 19:53:57,040: log_options() 'quotes_authors = '
-INFO: 2019-12-05 19:53:57,040: log_options() 'quotes_bg_color = [80, 80, 80]'
-INFO: 2019-12-05 19:53:57,041: log_options() 'quotes_bg_opacity = 55'
-INFO: 2019-12-05 19:53:57,041: log_options() 'quotes_change_enabled = False'
-INFO: 2019-12-05 19:53:57,041: log_options() 'quotes_change_interval = 300'
-INFO: 2019-12-05 19:53:57,041: log_options() 'quotes_disabled_sources = ['QuotesDaddy']'
-INFO: 2019-12-05 19:53:57,041: log_options() 'quotes_enabled = False'
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_font = Bitstream Charter 30'
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_hpos = 100'
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_tags = '
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_text_color = [255, 255, 255]'
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_text_shadow = False'
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_vpos = 40'
-INFO: 2019-12-05 19:53:57,042: log_options() 'quotes_width = 70'
-INFO: 2019-12-05 19:53:57,043: log_options() 'safe_mode = False'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_custom_enabled = False'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_downloads_enabled = False'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_fade = 0.4'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_favorites_enabled = True'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_mode = Fullscreen'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_monitor = All'
-INFO: 2019-12-05 19:53:57,043: log_options() 'slideshow_pan = 0.05'
-INFO: 2019-12-05 19:53:57,044: log_options() 'slideshow_seconds = 6.0'
-INFO: 2019-12-05 19:53:57,044: log_options() 'slideshow_sort_order = Random'
-INFO: 2019-12-05 19:53:57,044: log_options() 'slideshow_sources_enabled = True'
-INFO: 2019-12-05 19:53:57,044: log_options() 'slideshow_zoom = 0.2'
-INFO: 2019-12-05 19:53:57,044: log_options() 'smart_enabled = False'
-INFO: 2019-12-05 19:53:57,044: log_options() 'smart_notice_shown = True'
-INFO: 2019-12-05 19:53:57,044: log_options() 'smart_register_shown = False'
-INFO: 2019-12-05 19:53:57,044: log_options() 'sources = [[True, 3, 'The Favorites folder'], [False, 4, 'The Fetched folder'], [True, 2, '/usr/share/backgrounds'], [False, 6, 'Random wallpapers from Desktoppr.co'], [False, 15, 'Bing Photo of the Day'], [False, 16, 'High-resolution photos from Unsplash.com'], [False, 8, "NASA's Astronomy Picture of the Day"], [False, 11, 'World Sunlight Map - live wallpaper from Die.net'], [False, 7, 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [True, 2, '/home/niel/DATA/wallpapers']]'
-INFO: 2019-12-05 19:53:57,045: log_options() 'stats_enabled = True'
-INFO: 2019-12-05 19:53:57,045: log_options() 'stats_notice_shown = True'
-INFO: 2019-12-05 19:53:57,045: log_options() 'sync_enabled = True'
-INFO: 2019-12-05 19:53:57,045: log_options() 'use_landscape_enabled = True'
-INFO: 2019-12-05 19:53:57,045: clear_prepared_queue() 'Clearing prepared queue'
-INFO: 2019-12-05 19:53:57,046: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:53:57,046: prepare_thread() 'Prepared buffer contains 0 images'
-INFO: 2019-12-05 19:53:57,047: prepare_thread() 'Preparing some images'
-INFO: 2019-12-05 19:53:57,146: do_set_wp() 'Calling do_set_wp with /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg, time: 1575572037.1467333'
-INFO: 2019-12-05 19:53:57,168: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:53:57,224: list_files() 'More than 1 files in the folders, stop listing'
-INFO: 2019-12-05 19:53:58,439: prepare_thread() 'After search prepared buffer contains 97 images'
-INFO: 2019-12-05 19:54:06,559: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:54:35,976: apply() 'Applying preferences'
-INFO: 2019-12-05 19:54:35,990: set_visible() 'Showing status icon'
-INFO: 2019-12-05 19:54:35,990: reload_config() 'Creating new downloader for type 6, location Random wallpapers from Desktoppr.co'
-INFO: 2019-12-05 19:54:35,990: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
-INFO: 2019-12-05 19:54:35,991: log_options() 'Loaded options:'
-INFO: 2019-12-05 19:54:35,991: log_options() 'change_enabled = True'
-INFO: 2019-12-05 19:54:35,991: log_options() 'change_interval = 1800'
-INFO: 2019-12-05 19:54:35,992: log_options() 'change_on_start = True'
-INFO: 2019-12-05 19:54:35,992: log_options() 'clipboard_enabled = False'
-INFO: 2019-12-05 19:54:35,992: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
-INFO: 2019-12-05 19:54:35,992: log_options() 'clipboard_use_whitelist = True'
-INFO: 2019-12-05 19:54:35,992: log_options() 'clock_date_font = Ubuntu Condensed, 30'
-INFO: 2019-12-05 19:54:35,992: log_options() 'clock_enabled = False'
-INFO: 2019-12-05 19:54:35,992: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
-INFO: 2019-12-05 19:54:35,993: log_options() 'clock_font = Ubuntu Condensed, 70'
-INFO: 2019-12-05 19:54:35,993: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
-INFO: 2019-12-05 19:54:35,993: log_options() 'copyto_enabled = False'
-INFO: 2019-12-05 19:54:35,993: log_options() 'copyto_folder = Default'
-INFO: 2019-12-05 19:54:35,993: log_options() 'desired_color = [160, 160, 160]'
-INFO: 2019-12-05 19:54:35,993: log_options() 'desired_color_enabled = False'
-INFO: 2019-12-05 19:54:35,993: log_options() 'download_enabled = False'
-INFO: 2019-12-05 19:54:35,993: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
-INFO: 2019-12-05 19:54:35,993: log_options() 'download_interval = 600'
-INFO: 2019-12-05 19:54:35,994: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
-INFO: 2019-12-05 19:54:35,994: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
-INFO: 2019-12-05 19:54:35,994: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
-INFO: 2019-12-05 19:54:35,994: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
-INFO: 2019-12-05 19:54:35,994: log_options() 'icon = Light'
-INFO: 2019-12-05 19:54:35,994: log_options() 'lightness_enabled = False'
-INFO: 2019-12-05 19:54:35,994: log_options() 'lightness_mode = 0'
-INFO: 2019-12-05 19:54:35,994: log_options() 'min_rating = 4'
-INFO: 2019-12-05 19:54:35,995: log_options() 'min_rating_enabled = False'
-INFO: 2019-12-05 19:54:35,995: log_options() 'min_size = 80'
-INFO: 2019-12-05 19:54:35,995: log_options() 'min_size_enabled = True'
-INFO: 2019-12-05 19:54:35,995: log_options() 'quota_enabled = False'
-INFO: 2019-12-05 19:54:35,995: log_options() 'quota_size = 500'
-INFO: 2019-12-05 19:54:35,995: log_options() 'quotes_authors = '
-INFO: 2019-12-05 19:54:35,995: log_options() 'quotes_bg_color = [80, 80, 80]'
-INFO: 2019-12-05 19:54:35,995: log_options() 'quotes_bg_opacity = 55'
-INFO: 2019-12-05 19:54:35,995: log_options() 'quotes_change_enabled = False'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_change_interval = 300'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_disabled_sources = ['QuotesDaddy']'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_enabled = False'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_font = Bitstream Charter 30'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_hpos = 100'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_tags = '
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_text_color = [255, 255, 255]'
-INFO: 2019-12-05 19:54:35,996: log_options() 'quotes_text_shadow = False'
-INFO: 2019-12-05 19:54:35,997: log_options() 'quotes_vpos = 40'
-INFO: 2019-12-05 19:54:35,997: log_options() 'quotes_width = 70'
-INFO: 2019-12-05 19:54:35,997: log_options() 'safe_mode = False'
-INFO: 2019-12-05 19:54:35,997: log_options() 'slideshow_custom_enabled = False'
-INFO: 2019-12-05 19:54:35,997: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
-INFO: 2019-12-05 19:54:35,997: log_options() 'slideshow_downloads_enabled = False'
-INFO: 2019-12-05 19:54:35,997: log_options() 'slideshow_fade = 0.4'
-INFO: 2019-12-05 19:54:35,997: log_options() 'slideshow_favorites_enabled = True'
-INFO: 2019-12-05 19:54:35,997: log_options() 'slideshow_mode = Fullscreen'
-INFO: 2019-12-05 19:54:35,998: log_options() 'slideshow_monitor = All'
-INFO: 2019-12-05 19:54:35,998: log_options() 'slideshow_pan = 0.05'
-INFO: 2019-12-05 19:54:35,998: log_options() 'slideshow_seconds = 6.0'
-INFO: 2019-12-05 19:54:35,998: log_options() 'slideshow_sort_order = Random'
-INFO: 2019-12-05 19:54:35,998: log_options() 'slideshow_sources_enabled = True'
-INFO: 2019-12-05 19:54:35,998: log_options() 'slideshow_zoom = 0.2'
-INFO: 2019-12-05 19:54:35,998: log_options() 'smart_enabled = False'
-INFO: 2019-12-05 19:54:35,998: log_options() 'smart_notice_shown = True'
-INFO: 2019-12-05 19:54:35,998: log_options() 'smart_register_shown = False'
-INFO: 2019-12-05 19:54:35,999: log_options() 'sources = [[True, 3, 'The Favorites folder'], [False, 4, 'The Fetched folder'], [True, 2, '/usr/share/backgrounds'], [True, 6, 'Random wallpapers from Desktoppr.co'], [False, 15, 'Bing Photo of the Day'], [False, 16, 'High-resolution photos from Unsplash.com'], [False, 8, "NASA's Astronomy Picture of the Day"], [False, 11, 'World Sunlight Map - live wallpaper from Die.net'], [False, 7, 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [True, 2, '/home/niel/DATA/wallpapers']]'
-INFO: 2019-12-05 19:54:35,999: log_options() 'stats_enabled = True'
-INFO: 2019-12-05 19:54:35,999: log_options() 'stats_notice_shown = True'
-INFO: 2019-12-05 19:54:35,999: log_options() 'sync_enabled = True'
-INFO: 2019-12-05 19:54:35,999: log_options() 'use_landscape_enabled = True'
-INFO: 2019-12-05 19:54:35,999: clear_prepared_queue() 'Clearing prepared queue'
-INFO: 2019-12-05 19:54:36,000: prepare_thread() 'Prepared buffer contains 0 images'
-INFO: 2019-12-05 19:54:36,000: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:54:36,000: prepare_thread() 'Preparing some images'
-INFO: 2019-12-05 19:54:36,100: do_set_wp() 'Calling do_set_wp with /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg, time: 1575572076.1007602'
-INFO: 2019-12-05 19:54:36,116: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:54:36,821: prepare_thread() 'After search prepared buffer contains 95 images'
-INFO: 2019-12-05 19:54:36,821: prepare_thread() 'Prepared buffer contains 95 images'
-INFO: 2019-12-05 19:54:37,646: apply() 'Applying preferences'
-INFO: 2019-12-05 19:54:37,659: set_visible() 'Showing status icon'
-INFO: 2019-12-05 19:54:37,660: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
-INFO: 2019-12-05 19:54:37,660: log_options() 'Loaded options:'
-INFO: 2019-12-05 19:54:37,660: log_options() 'change_enabled = True'
-INFO: 2019-12-05 19:54:37,660: log_options() 'change_interval = 1800'
-INFO: 2019-12-05 19:54:37,660: log_options() 'change_on_start = True'
-INFO: 2019-12-05 19:54:37,660: log_options() 'clipboard_enabled = False'
-INFO: 2019-12-05 19:54:37,661: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
-INFO: 2019-12-05 19:54:37,661: log_options() 'clipboard_use_whitelist = True'
-INFO: 2019-12-05 19:54:37,661: log_options() 'clock_date_font = Ubuntu Condensed, 30'
-INFO: 2019-12-05 19:54:37,661: log_options() 'clock_enabled = False'
-INFO: 2019-12-05 19:54:37,661: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
-INFO: 2019-12-05 19:54:37,661: log_options() 'clock_font = Ubuntu Condensed, 70'
-INFO: 2019-12-05 19:54:37,662: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
-INFO: 2019-12-05 19:54:37,662: log_options() 'copyto_enabled = False'
-INFO: 2019-12-05 19:54:37,662: log_options() 'copyto_folder = Default'
-INFO: 2019-12-05 19:54:37,662: log_options() 'desired_color = [160, 160, 160]'
-INFO: 2019-12-05 19:54:37,662: log_options() 'desired_color_enabled = False'
-INFO: 2019-12-05 19:54:37,662: log_options() 'download_enabled = False'
-INFO: 2019-12-05 19:54:37,662: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
-INFO: 2019-12-05 19:54:37,662: log_options() 'download_interval = 600'
-INFO: 2019-12-05 19:54:37,662: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
-INFO: 2019-12-05 19:54:37,662: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
-INFO: 2019-12-05 19:54:37,663: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
-INFO: 2019-12-05 19:54:37,663: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
-INFO: 2019-12-05 19:54:37,663: log_options() 'icon = Light'
-INFO: 2019-12-05 19:54:37,663: log_options() 'lightness_enabled = False'
-INFO: 2019-12-05 19:54:37,663: log_options() 'lightness_mode = 0'
-INFO: 2019-12-05 19:54:37,663: log_options() 'min_rating = 4'
-INFO: 2019-12-05 19:54:37,663: log_options() 'min_rating_enabled = False'
-INFO: 2019-12-05 19:54:37,663: log_options() 'min_size = 80'
-INFO: 2019-12-05 19:54:37,663: log_options() 'min_size_enabled = True'
-INFO: 2019-12-05 19:54:37,663: log_options() 'quota_enabled = False'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quota_size = 500'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_authors = '
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_bg_color = [80, 80, 80]'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_bg_opacity = 55'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_change_enabled = False'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_change_interval = 300'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_disabled_sources = ['QuotesDaddy']'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_enabled = False'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_font = Bitstream Charter 30'
-INFO: 2019-12-05 19:54:37,664: log_options() 'quotes_hpos = 100'
-INFO: 2019-12-05 19:54:37,665: log_options() 'quotes_tags = '
-INFO: 2019-12-05 19:54:37,665: log_options() 'quotes_text_color = [255, 255, 255]'
-INFO: 2019-12-05 19:54:37,665: log_options() 'quotes_text_shadow = False'
-INFO: 2019-12-05 19:54:37,665: log_options() 'quotes_vpos = 40'
-INFO: 2019-12-05 19:54:37,665: log_options() 'quotes_width = 70'
-INFO: 2019-12-05 19:54:37,665: log_options() 'safe_mode = False'
-INFO: 2019-12-05 19:54:37,665: log_options() 'slideshow_custom_enabled = False'
-INFO: 2019-12-05 19:54:37,665: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
-INFO: 2019-12-05 19:54:37,665: log_options() 'slideshow_downloads_enabled = False'
-INFO: 2019-12-05 19:54:37,665: log_options() 'slideshow_fade = 0.4'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_favorites_enabled = True'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_mode = Fullscreen'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_monitor = All'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_pan = 0.05'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_seconds = 6.0'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_sort_order = Random'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_sources_enabled = True'
-INFO: 2019-12-05 19:54:37,666: log_options() 'slideshow_zoom = 0.2'
-INFO: 2019-12-05 19:54:37,666: log_options() 'smart_enabled = False'
-INFO: 2019-12-05 19:54:37,666: log_options() 'smart_notice_shown = True'
-INFO: 2019-12-05 19:54:37,667: log_options() 'smart_register_shown = False'
-INFO: 2019-12-05 19:54:37,667: log_options() 'sources = [[True, 3, 'The Favorites folder'], [True, 4, 'The Fetched folder'], [True, 2, '/usr/share/backgrounds'], [True, 6, 'Random wallpapers from Desktoppr.co'], [False, 15, 'Bing Photo of the Day'], [False, 16, 'High-resolution photos from Unsplash.com'], [False, 8, "NASA's Astronomy Picture of the Day"], [False, 11, 'World Sunlight Map - live wallpaper from Die.net'], [False, 7, 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [True, 2, '/home/niel/DATA/wallpapers']]'
-INFO: 2019-12-05 19:54:37,667: log_options() 'stats_enabled = True'
-INFO: 2019-12-05 19:54:37,667: log_options() 'stats_notice_shown = True'
-INFO: 2019-12-05 19:54:37,667: log_options() 'sync_enabled = True'
-INFO: 2019-12-05 19:54:37,667: log_options() 'use_landscape_enabled = True'
-INFO: 2019-12-05 19:54:37,667: clear_prepared_queue() 'Clearing prepared queue'
-INFO: 2019-12-05 19:54:37,667: prepare_thread() 'Prepared buffer contains 0 images'
-INFO: 2019-12-05 19:54:37,668: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:54:37,668: prepare_thread() 'Preparing some images'
-INFO: 2019-12-05 19:54:37,768: do_set_wp() 'Calling do_set_wp with /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg, time: 1575572077.7688158'
-INFO: 2019-12-05 19:54:37,784: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:54:38,226: prepare_thread() 'After search prepared buffer contains 95 images'
-INFO: 2019-12-05 19:54:38,226: prepare_thread() 'Prepared buffer contains 95 images'
-INFO: 2019-12-05 19:54:43,241: trigger_download() 'Triggering one download'
-INFO: 2019-12-05 19:54:43,340: apply() 'Applying preferences'
-INFO: 2019-12-05 19:54:43,355: set_visible() 'Showing status icon'
-INFO: 2019-12-05 19:54:43,355: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
-INFO: 2019-12-05 19:54:43,356: log_options() 'Loaded options:'
-INFO: 2019-12-05 19:54:43,356: log_options() 'change_enabled = True'
-INFO: 2019-12-05 19:54:43,356: log_options() 'change_interval = 1800'
-INFO: 2019-12-05 19:54:43,356: log_options() 'change_on_start = True'
-INFO: 2019-12-05 19:54:43,356: log_options() 'clipboard_enabled = False'
-INFO: 2019-12-05 19:54:43,357: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
-INFO: 2019-12-05 19:54:43,357: log_options() 'clipboard_use_whitelist = True'
-INFO: 2019-12-05 19:54:43,357: log_options() 'clock_date_font = Ubuntu Condensed, 30'
-INFO: 2019-12-05 19:54:43,357: log_options() 'clock_enabled = False'
-INFO: 2019-12-05 19:54:43,357: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
-INFO: 2019-12-05 19:54:43,358: log_options() 'clock_font = Ubuntu Condensed, 70'
-INFO: 2019-12-05 19:54:43,358: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
-INFO: 2019-12-05 19:54:43,358: log_options() 'copyto_enabled = False'
-INFO: 2019-12-05 19:54:43,358: log_options() 'copyto_folder = Default'
-INFO: 2019-12-05 19:54:43,358: log_options() 'desired_color = [160, 160, 160]'
-INFO: 2019-12-05 19:54:43,358: log_options() 'desired_color_enabled = False'
-INFO: 2019-12-05 19:54:43,358: log_options() 'download_enabled = False'
-INFO: 2019-12-05 19:54:43,358: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
-INFO: 2019-12-05 19:54:43,358: log_options() 'download_interval = 600'
-INFO: 2019-12-05 19:54:43,359: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
-INFO: 2019-12-05 19:54:43,359: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
-INFO: 2019-12-05 19:54:43,359: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
-INFO: 2019-12-05 19:54:43,359: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
-INFO: 2019-12-05 19:54:43,359: log_options() 'icon = Light'
-INFO: 2019-12-05 19:54:43,359: log_options() 'lightness_enabled = False'
-INFO: 2019-12-05 19:54:43,359: log_options() 'lightness_mode = 0'
-INFO: 2019-12-05 19:54:43,359: log_options() 'min_rating = 4'
-INFO: 2019-12-05 19:54:43,359: log_options() 'min_rating_enabled = False'
-INFO: 2019-12-05 19:54:43,360: log_options() 'min_size = 80'
-INFO: 2019-12-05 19:54:43,360: log_options() 'min_size_enabled = True'
-INFO: 2019-12-05 19:54:43,360: log_options() 'quota_enabled = False'
-INFO: 2019-12-05 19:54:43,360: log_options() 'quota_size = 500'
-INFO: 2019-12-05 19:54:43,360: log_options() 'quotes_authors = '
-INFO: 2019-12-05 19:54:43,360: log_options() 'quotes_bg_color = [80, 80, 80]'
-INFO: 2019-12-05 19:54:43,360: log_options() 'quotes_bg_opacity = 55'
-INFO: 2019-12-05 19:54:43,360: log_options() 'quotes_change_enabled = False'
-INFO: 2019-12-05 19:54:43,360: log_options() 'quotes_change_interval = 300'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_disabled_sources = ['QuotesDaddy']'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_enabled = False'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_font = Bitstream Charter 30'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_hpos = 100'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_tags = '
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_text_color = [255, 255, 255]'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_text_shadow = False'
-INFO: 2019-12-05 19:54:43,361: log_options() 'quotes_vpos = 40'
-INFO: 2019-12-05 19:54:43,362: log_options() 'quotes_width = 70'
-INFO: 2019-12-05 19:54:43,362: log_options() 'safe_mode = False'
-INFO: 2019-12-05 19:54:43,362: log_options() 'slideshow_custom_enabled = False'
-INFO: 2019-12-05 19:54:43,362: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
-INFO: 2019-12-05 19:54:43,362: log_options() 'slideshow_downloads_enabled = False'
-INFO: 2019-12-05 19:54:43,362: log_options() 'slideshow_fade = 0.4'
-INFO: 2019-12-05 19:54:43,362: log_options() 'slideshow_favorites_enabled = True'
-INFO: 2019-12-05 19:54:43,362: log_options() 'slideshow_mode = Fullscreen'
-INFO: 2019-12-05 19:54:43,363: log_options() 'slideshow_monitor = All'
-INFO: 2019-12-05 19:54:43,363: log_options() 'slideshow_pan = 0.05'
-INFO: 2019-12-05 19:54:43,363: log_options() 'slideshow_seconds = 6.0'
-INFO: 2019-12-05 19:54:43,363: log_options() 'slideshow_sort_order = Random'
-INFO: 2019-12-05 19:54:43,363: log_options() 'slideshow_sources_enabled = True'
-INFO: 2019-12-05 19:54:43,363: log_options() 'slideshow_zoom = 0.2'
-INFO: 2019-12-05 19:54:43,363: log_options() 'smart_enabled = False'
-INFO: 2019-12-05 19:54:43,363: log_options() 'smart_notice_shown = True'
-INFO: 2019-12-05 19:54:43,363: log_options() 'smart_register_shown = False'
-INFO: 2019-12-05 19:54:43,364: log_options() 'sources = [[True, 3, 'The Favorites folder'], [True, 4, 'The Fetched folder'], [True, 2, '/usr/share/backgrounds'], [True, 6, 'Random wallpapers from Desktoppr.co'], [False, 15, 'Bing Photo of the Day'], [False, 16, 'High-resolution photos from Unsplash.com'], [False, 8, "NASA's Astronomy Picture of the Day"], [False, 11, 'World Sunlight Map - live wallpaper from Die.net'], [False, 7, 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [True, 2, '/home/niel/DATA/wallpapers']]'
-INFO: 2019-12-05 19:54:43,364: log_options() 'stats_enabled = True'
-INFO: 2019-12-05 19:54:43,364: log_options() 'stats_notice_shown = True'
-INFO: 2019-12-05 19:54:43,364: log_options() 'sync_enabled = True'
-INFO: 2019-12-05 19:54:43,364: log_options() 'use_landscape_enabled = True'
-INFO: 2019-12-05 19:54:43,364: reload_config() 'No need to clear prepared queue'
-INFO: 2019-12-05 19:54:43,365: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:54:43,365: prepare_thread() 'Prepared buffer contains 95 images'
-INFO: 2019-12-05 19:54:43,465: do_set_wp() 'Calling do_set_wp with /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg, time: 1575572083.465636'
-INFO: 2019-12-05 19:54:43,490: update_indicator() 'Setting file info to: /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg'
-INFO: 2019-12-05 19:54:45,396: process_command() 'Received command: ['-n']'
-INFO: 2019-12-05 19:54:45,403: set_wallpaper() 'Calling set_wallpaper with /home/niel/DATA/wallpapers/organizer-791939-2019-12-01-0850.jpg'
-INFO: 2019-12-05 19:54:45,403: prepare_thread() 'Prepared buffer contains 94 images'
-INFO: 2019-12-05 19:54:45,404: do_set_wp() 'Calling do_set_wp with /home/niel/DATA/wallpapers/organizer-791939-2019-12-01-0850.jpg, time: 1575572085.4042864'
-INFO: 2019-12-05 19:54:45,422: update_indicator() 'Setting file info to: /home/niel/DATA/wallpapers/organizer-791939-2019-12-01-0850.jpg'
-INFO: 2019-12-05 19:54:49,139: process_command() 'Received command: ['-n']'
-INFO: 2019-12-05 19:54:49,147: set_wallpaper() 'Calling set_wallpaper with /home/niel/DATA/wallpapers/city_nightscape__3840_x_2160__hellsjuggernaut-2019-11-07-1633.jpg'
-INFO: 2019-12-05 19:54:49,147: prepare_thread() 'Prepared buffer contains 93 images'
-INFO: 2019-12-05 19:54:49,147: do_set_wp() 'Calling do_set_wp with /home/niel/DATA/wallpapers/city_nightscape__3840_x_2160__hellsjuggernaut-2019-11-07-1633.jpg, time: 1575572089.14782'
-INFO: 2019-12-05 19:54:49,164: update_indicator() 'Setting file info to: /home/niel/DATA/wallpapers/city_nightscape__3840_x_2160__hellsjuggernaut-2019-11-07-1633.jpg'
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f43b07c91f0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-01-13 19:48:51,638: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2020-01-13 19:48:51,638: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2020-01-13 19:48:51,638: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2020-01-13 19:48:51,638: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2020-01-13 19:48:51,638: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2020-01-13 19:48:51,638: download_one() 'Earth View: Queue size: 0'
+INFO: 2020-01-13 19:48:51,638: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2020-01-13 19:48:51,638: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2020-01-13 19:48:51,638: download_one() 'Earth View: Filling queue'
+ERROR: 2020-01-13 19:48:51,645: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f43bc19fd00>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /limhenry/earthview/3cd868a932cd652c4373c0f6ea8618a96b08be4e/wallpaper%20changer/data.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f43bc19fd00>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1159, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.8/site-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py", line 57, in fill_queue
+    queue = Util.fetch_json(DATA_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /limhenry/earthview/3cd868a932cd652c4373c0f6ea8618a96b08be4e/wallpaper%20changer/data.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f43bc19fd00>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-01-13 19:49:02,719: reload() 'Reloading preferences dialog'
+INFO: 2020-01-13 19:49:09,218: apply() 'Applying preferences'
+INFO: 2020-01-13 19:49:09,233: log_options() 'Loaded options:'
+INFO: 2020-01-13 19:49:09,233: log_options() 'change_enabled = True'
+INFO: 2020-01-13 19:49:09,233: log_options() 'change_interval = 1800'
+INFO: 2020-01-13 19:49:09,233: log_options() 'change_on_start = True'
+INFO: 2020-01-13 19:49:09,233: log_options() 'clipboard_enabled = False'
+INFO: 2020-01-13 19:49:09,233: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2020-01-13 19:49:09,233: log_options() 'clipboard_use_whitelist = True'
+INFO: 2020-01-13 19:49:09,233: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2020-01-13 19:49:09,233: log_options() 'clock_enabled = False'
+INFO: 2020-01-13 19:49:09,233: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2020-01-13 19:49:09,234: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2020-01-13 19:49:09,234: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
+INFO: 2020-01-13 19:49:09,234: log_options() 'copyto_enabled = False'
+INFO: 2020-01-13 19:49:09,234: log_options() 'copyto_folder = Default'
+INFO: 2020-01-13 19:49:09,234: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2020-01-13 19:49:09,234: log_options() 'desired_color_enabled = False'
+INFO: 2020-01-13 19:49:09,234: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
+INFO: 2020-01-13 19:49:09,234: log_options() 'download_preference_ratio = 0.9'
+INFO: 2020-01-13 19:49:09,234: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
+INFO: 2020-01-13 19:49:09,234: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2020-01-13 19:49:09,234: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
+INFO: 2020-01-13 19:49:09,235: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2020-01-13 19:49:09,235: log_options() 'icon = Light'
+INFO: 2020-01-13 19:49:09,235: log_options() 'lightness_enabled = False'
+INFO: 2020-01-13 19:49:09,235: log_options() 'lightness_mode = 0'
+INFO: 2020-01-13 19:49:09,235: log_options() 'min_rating = 4'
+INFO: 2020-01-13 19:49:09,235: log_options() 'min_rating_enabled = False'
+INFO: 2020-01-13 19:49:09,235: log_options() 'min_size = 80'
+INFO: 2020-01-13 19:49:09,235: log_options() 'min_size_enabled = True'
+INFO: 2020-01-13 19:49:09,235: log_options() 'quota_enabled = False'
+INFO: 2020-01-13 19:49:09,235: log_options() 'quota_size = 500'
+INFO: 2020-01-13 19:49:09,236: set_visible() 'Showing status icon'
+INFO: 2020-01-13 19:49:09,236: log_options() 'quotes_authors = '
+INFO: 2020-01-13 19:49:09,236: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2020-01-13 19:49:09,236: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2020-01-13 19:49:09,236: log_options() 'quotes_bg_opacity = 55'
+INFO: 2020-01-13 19:49:09,236: log_options() 'quotes_change_enabled = False'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_change_interval = 300'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_enabled = False'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_hpos = 100'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_max_length = 250'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_tags = '
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_text_shadow = False'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_vpos = 40'
+INFO: 2020-01-13 19:49:09,237: log_options() 'quotes_width = 70'
+INFO: 2020-01-13 19:49:09,238: log_options() 'safe_mode = False'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_custom_enabled = False'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_fade = 0.4'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_monitor = All'
+INFO: 2020-01-13 19:49:09,238: log_options() 'slideshow_pan = 0.05'
+INFO: 2020-01-13 19:49:09,239: log_options() 'slideshow_seconds = 6.0'
+INFO: 2020-01-13 19:49:09,239: log_options() 'slideshow_sort_order = Random'
+INFO: 2020-01-13 19:49:09,239: log_options() 'slideshow_sources_enabled = True'
+INFO: 2020-01-13 19:49:09,239: log_options() 'slideshow_zoom = 0.2'
+INFO: 2020-01-13 19:49:09,239: log_options() 'smart_enabled = False'
+INFO: 2020-01-13 19:49:09,239: log_options() 'smart_notice_shown = True'
+INFO: 2020-01-13 19:49:09,239: log_options() 'smart_register_shown = False'
+INFO: 2020-01-13 19:49:09,239: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'desktoppr', 'Random wallpapers from Desktoppr.co'], [False, 'bing', 'Bing Photo of the Day'], [False, 'unsplash', 'High-resolution photos from Unsplash.com'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [False, 'earth', 'World Sunlight Map - live wallpaper from Die.net'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [False, 'folder', '/home/niel/DATA/wallpapers'], [True, 'chromeos', 'Chrome OS Wallpapers'], [True, 'earthview', 'Google Earth View Wallpapers']]'
+INFO: 2020-01-13 19:49:09,239: log_options() 'stats_enabled = True'
+INFO: 2020-01-13 19:49:09,239: log_options() 'stats_notice_shown = True'
+INFO: 2020-01-13 19:49:09,239: log_options() 'sync_enabled = True'
+INFO: 2020-01-13 19:49:09,240: log_options() 'use_landscape_enabled = True'
+INFO: 2020-01-13 19:49:09,240: clear_prepared_queue() 'Clearing prepared queue'
+INFO: 2020-01-13 19:49:09,240: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:09,240: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2020-01-13 19:49:09,240: prepare_thread() 'Preparing some images'
+INFO: 2020-01-13 19:49:09,251: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:09,302: prepare_thread() 'After search prepared buffer contains 81 images'
+INFO: 2020-01-13 19:49:09,302: prepare_thread() 'Prepared buffer contains 81 images'
+INFO: 2020-01-13 19:49:09,355: do_set_wp() 'Calling do_set_wp with /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg, time: 1578941349.3559165'
+INFO: 2020-01-13 19:49:09,378: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:09,386: list_files() 'More than 1 files in the folders, stop listing'
+ERROR: 2020-01-13 19:49:09,422: load_options() 'Missing or bad thumbs_limit option in ui.conf'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/ThumbsManager.py", line 418, in load_options
+    if config["thumbs_limit"] != self.UNLIMITED
+  File "/usr/lib/python3.8/site-packages/configobj.py", line 554, in __getitem__
+    val = dict.__getitem__(self, key)
+KeyError: 'thumbs_limit'
+INFO: 2020-01-13 19:49:10,283: apply() 'Applying preferences'
+INFO: 2020-01-13 19:49:10,298: set_visible() 'Showing status icon'
+INFO: 2020-01-13 19:49:10,298: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2020-01-13 19:49:10,300: log_options() 'Loaded options:'
+INFO: 2020-01-13 19:49:10,301: log_options() 'change_enabled = True'
+INFO: 2020-01-13 19:49:10,301: log_options() 'change_interval = 1800'
+INFO: 2020-01-13 19:49:10,301: log_options() 'change_on_start = True'
+INFO: 2020-01-13 19:49:10,301: log_options() 'clipboard_enabled = False'
+INFO: 2020-01-13 19:49:10,301: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2020-01-13 19:49:10,301: log_options() 'clipboard_use_whitelist = True'
+INFO: 2020-01-13 19:49:10,301: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2020-01-13 19:49:10,302: log_options() 'clock_enabled = False'
+INFO: 2020-01-13 19:49:10,302: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2020-01-13 19:49:10,302: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2020-01-13 19:49:10,302: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
+INFO: 2020-01-13 19:49:10,302: log_options() 'copyto_enabled = False'
+INFO: 2020-01-13 19:49:10,302: log_options() 'copyto_folder = Default'
+INFO: 2020-01-13 19:49:10,302: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2020-01-13 19:49:10,302: log_options() 'desired_color_enabled = False'
+INFO: 2020-01-13 19:49:10,303: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
+INFO: 2020-01-13 19:49:10,303: log_options() 'download_preference_ratio = 0.9'
+INFO: 2020-01-13 19:49:10,303: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
+INFO: 2020-01-13 19:49:10,303: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2020-01-13 19:49:10,303: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
+INFO: 2020-01-13 19:49:10,303: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2020-01-13 19:49:10,303: log_options() 'icon = Light'
+INFO: 2020-01-13 19:49:10,303: log_options() 'lightness_enabled = False'
+INFO: 2020-01-13 19:49:10,303: log_options() 'lightness_mode = 0'
+INFO: 2020-01-13 19:49:10,303: log_options() 'min_rating = 4'
+INFO: 2020-01-13 19:49:10,303: log_options() 'min_rating_enabled = False'
+INFO: 2020-01-13 19:49:10,304: log_options() 'min_size = 80'
+INFO: 2020-01-13 19:49:10,304: log_options() 'min_size_enabled = True'
+INFO: 2020-01-13 19:49:10,304: log_options() 'quota_enabled = False'
+INFO: 2020-01-13 19:49:10,304: log_options() 'quota_size = 500'
+INFO: 2020-01-13 19:49:10,304: log_options() 'quotes_authors = '
+INFO: 2020-01-13 19:49:10,304: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2020-01-13 19:49:10,304: log_options() 'quotes_bg_opacity = 55'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_change_enabled = False'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_change_interval = 300'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_enabled = False'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_hpos = 100'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_max_length = 250'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_tags = '
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2020-01-13 19:49:10,305: log_options() 'quotes_text_shadow = False'
+INFO: 2020-01-13 19:49:10,306: log_options() 'quotes_vpos = 40'
+INFO: 2020-01-13 19:49:10,306: log_options() 'quotes_width = 70'
+INFO: 2020-01-13 19:49:10,306: log_options() 'safe_mode = False'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_custom_enabled = False'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_fade = 0.4'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_monitor = All'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_pan = 0.05'
+INFO: 2020-01-13 19:49:10,306: log_options() 'slideshow_seconds = 6.0'
+INFO: 2020-01-13 19:49:10,307: log_options() 'slideshow_sort_order = Random'
+INFO: 2020-01-13 19:49:10,307: log_options() 'slideshow_sources_enabled = True'
+INFO: 2020-01-13 19:49:10,307: log_options() 'slideshow_zoom = 0.2'
+INFO: 2020-01-13 19:49:10,307: log_options() 'smart_enabled = False'
+INFO: 2020-01-13 19:49:10,307: log_options() 'smart_notice_shown = True'
+INFO: 2020-01-13 19:49:10,307: log_options() 'smart_register_shown = False'
+INFO: 2020-01-13 19:49:10,307: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'desktoppr', 'Random wallpapers from Desktoppr.co'], [False, 'bing', 'Bing Photo of the Day'], [False, 'unsplash', 'High-resolution photos from Unsplash.com'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [False, 'earth', 'World Sunlight Map - live wallpaper from Die.net'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [False, 'folder', '/home/niel/DATA/wallpapers'], [False, 'chromeos', 'Chrome OS Wallpapers'], [True, 'earthview', 'Google Earth View Wallpapers']]'
+INFO: 2020-01-13 19:49:10,307: log_options() 'stats_enabled = True'
+INFO: 2020-01-13 19:49:10,307: log_options() 'stats_notice_shown = True'
+INFO: 2020-01-13 19:49:10,307: log_options() 'sync_enabled = True'
+INFO: 2020-01-13 19:49:10,307: log_options() 'use_landscape_enabled = True'
+INFO: 2020-01-13 19:49:10,308: clear_prepared_queue() 'Clearing prepared queue'
+INFO: 2020-01-13 19:49:10,308: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:10,308: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2020-01-13 19:49:10,309: prepare_thread() 'Preparing some images'
+INFO: 2020-01-13 19:49:10,331: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:10,371: prepare_thread() 'After search prepared buffer contains 66 images'
+INFO: 2020-01-13 19:49:10,372: prepare_thread() 'Prepared buffer contains 66 images'
+INFO: 2020-01-13 19:49:10,443: do_set_wp() 'Calling do_set_wp with /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg, time: 1578941350.4437063'
+INFO: 2020-01-13 19:49:10,485: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:11,303: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:11,303: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:11,398: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:11,405: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:12,206: apply() 'Applying preferences'
+INFO: 2020-01-13 19:49:12,221: set_visible() 'Showing status icon'
+INFO: 2020-01-13 19:49:12,222: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2020-01-13 19:49:12,223: log_options() 'Loaded options:'
+INFO: 2020-01-13 19:49:12,224: log_options() 'change_enabled = True'
+INFO: 2020-01-13 19:49:12,224: log_options() 'change_interval = 1800'
+INFO: 2020-01-13 19:49:12,224: log_options() 'change_on_start = True'
+INFO: 2020-01-13 19:49:12,224: log_options() 'clipboard_enabled = False'
+INFO: 2020-01-13 19:49:12,224: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2020-01-13 19:49:12,224: log_options() 'clipboard_use_whitelist = True'
+INFO: 2020-01-13 19:49:12,224: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2020-01-13 19:49:12,224: log_options() 'clock_enabled = False'
+INFO: 2020-01-13 19:49:12,224: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2020-01-13 19:49:12,224: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2020-01-13 19:49:12,224: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
+INFO: 2020-01-13 19:49:12,225: log_options() 'copyto_enabled = False'
+INFO: 2020-01-13 19:49:12,225: log_options() 'copyto_folder = Default'
+INFO: 2020-01-13 19:49:12,225: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2020-01-13 19:49:12,225: log_options() 'desired_color_enabled = False'
+INFO: 2020-01-13 19:49:12,225: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
+INFO: 2020-01-13 19:49:12,225: log_options() 'download_preference_ratio = 0.9'
+INFO: 2020-01-13 19:49:12,225: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
+INFO: 2020-01-13 19:49:12,225: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2020-01-13 19:49:12,225: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
+INFO: 2020-01-13 19:49:12,225: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2020-01-13 19:49:12,225: log_options() 'icon = Light'
+INFO: 2020-01-13 19:49:12,226: log_options() 'lightness_enabled = False'
+INFO: 2020-01-13 19:49:12,226: log_options() 'lightness_mode = 0'
+INFO: 2020-01-13 19:49:12,226: log_options() 'min_rating = 4'
+INFO: 2020-01-13 19:49:12,226: log_options() 'min_rating_enabled = False'
+INFO: 2020-01-13 19:49:12,226: log_options() 'min_size = 80'
+INFO: 2020-01-13 19:49:12,226: log_options() 'min_size_enabled = True'
+INFO: 2020-01-13 19:49:12,226: log_options() 'quota_enabled = False'
+INFO: 2020-01-13 19:49:12,226: log_options() 'quota_size = 500'
+INFO: 2020-01-13 19:49:12,226: log_options() 'quotes_authors = '
+INFO: 2020-01-13 19:49:12,226: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2020-01-13 19:49:12,226: log_options() 'quotes_bg_opacity = 55'
+INFO: 2020-01-13 19:49:12,226: log_options() 'quotes_change_enabled = False'
+INFO: 2020-01-13 19:49:12,227: log_options() 'quotes_change_interval = 300'
+INFO: 2020-01-13 19:49:12,227: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2020-01-13 19:49:12,227: log_options() 'quotes_enabled = False'
+INFO: 2020-01-13 19:49:12,227: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
+INFO: 2020-01-13 19:49:12,227: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2020-01-13 19:49:12,227: log_options() 'quotes_hpos = 100'
+INFO: 2020-01-13 19:49:12,227: log_options() 'quotes_max_length = 250'
+INFO: 2020-01-13 19:49:12,229: log_options() 'quotes_tags = '
+INFO: 2020-01-13 19:49:12,229: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2020-01-13 19:49:12,229: log_options() 'quotes_text_shadow = False'
+INFO: 2020-01-13 19:49:12,229: log_options() 'quotes_vpos = 40'
+INFO: 2020-01-13 19:49:12,229: log_options() 'quotes_width = 70'
+INFO: 2020-01-13 19:49:12,229: log_options() 'safe_mode = False'
+INFO: 2020-01-13 19:49:12,229: log_options() 'slideshow_custom_enabled = False'
+INFO: 2020-01-13 19:49:12,229: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
+INFO: 2020-01-13 19:49:12,229: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2020-01-13 19:49:12,229: log_options() 'slideshow_fade = 0.4'
+INFO: 2020-01-13 19:49:12,229: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2020-01-13 19:49:12,230: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2020-01-13 19:49:12,230: log_options() 'slideshow_monitor = All'
+INFO: 2020-01-13 19:49:12,230: log_options() 'slideshow_pan = 0.05'
+INFO: 2020-01-13 19:49:12,230: log_options() 'slideshow_seconds = 6.0'
+INFO: 2020-01-13 19:49:12,230: log_options() 'slideshow_sort_order = Random'
+INFO: 2020-01-13 19:49:12,230: log_options() 'slideshow_sources_enabled = True'
+INFO: 2020-01-13 19:49:12,230: log_options() 'slideshow_zoom = 0.2'
+INFO: 2020-01-13 19:49:12,230: log_options() 'smart_enabled = False'
+INFO: 2020-01-13 19:49:12,230: log_options() 'smart_notice_shown = True'
+INFO: 2020-01-13 19:49:12,231: log_options() 'smart_register_shown = False'
+INFO: 2020-01-13 19:49:12,231: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'desktoppr', 'Random wallpapers from Desktoppr.co'], [False, 'bing', 'Bing Photo of the Day'], [False, 'unsplash', 'High-resolution photos from Unsplash.com'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [False, 'earth', 'World Sunlight Map - live wallpaper from Die.net'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [False, 'folder', '/home/niel/DATA/wallpapers'], [False, 'chromeos', 'Chrome OS Wallpapers'], [False, 'earthview', 'Google Earth View Wallpapers']]'
+INFO: 2020-01-13 19:49:12,231: log_options() 'stats_enabled = True'
+INFO: 2020-01-13 19:49:12,231: log_options() 'stats_notice_shown = True'
+INFO: 2020-01-13 19:49:12,231: log_options() 'sync_enabled = True'
+INFO: 2020-01-13 19:49:12,231: log_options() 'use_landscape_enabled = True'
+INFO: 2020-01-13 19:49:12,231: clear_prepared_queue() 'Clearing prepared queue'
+INFO: 2020-01-13 19:49:12,232: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:12,232: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2020-01-13 19:49:12,232: prepare_thread() 'Preparing some images'
+INFO: 2020-01-13 19:49:12,248: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:12,263: prepare_thread() 'After search prepared buffer contains 48 images'
+INFO: 2020-01-13 19:49:12,266: prepare_thread() 'Prepared buffer contains 48 images'
+INFO: 2020-01-13 19:49:12,356: do_set_wp() 'Calling do_set_wp with /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg, time: 1578941352.3565254'
+INFO: 2020-01-13 19:49:12,372: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:12,372: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:12,418: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:12,429: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:12,439: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:13,401: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:13,410: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:14,266: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:14,269: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:35,548: apply() 'Applying preferences'
+INFO: 2020-01-13 19:49:35,575: log_options() 'Loaded options:'
+INFO: 2020-01-13 19:49:35,575: log_options() 'change_enabled = True'
+INFO: 2020-01-13 19:49:35,575: log_options() 'change_interval = 1800'
+INFO: 2020-01-13 19:49:35,575: log_options() 'change_on_start = True'
+INFO: 2020-01-13 19:49:35,575: log_options() 'clipboard_enabled = False'
+INFO: 2020-01-13 19:49:35,575: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2020-01-13 19:49:35,575: log_options() 'clipboard_use_whitelist = True'
+INFO: 2020-01-13 19:49:35,575: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2020-01-13 19:49:35,575: log_options() 'clock_enabled = False'
+INFO: 2020-01-13 19:49:35,576: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2020-01-13 19:49:35,576: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2020-01-13 19:49:35,576: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
+INFO: 2020-01-13 19:49:35,576: log_options() 'copyto_enabled = False'
+INFO: 2020-01-13 19:49:35,576: log_options() 'copyto_folder = Default'
+INFO: 2020-01-13 19:49:35,576: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2020-01-13 19:49:35,576: log_options() 'desired_color_enabled = False'
+INFO: 2020-01-13 19:49:35,576: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
+INFO: 2020-01-13 19:49:35,576: log_options() 'download_preference_ratio = 0.9'
+INFO: 2020-01-13 19:49:35,576: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
+INFO: 2020-01-13 19:49:35,576: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2020-01-13 19:49:35,577: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
+INFO: 2020-01-13 19:49:35,577: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2020-01-13 19:49:35,577: log_options() 'icon = Light'
+INFO: 2020-01-13 19:49:35,577: log_options() 'lightness_enabled = False'
+INFO: 2020-01-13 19:49:35,577: log_options() 'lightness_mode = 0'
+INFO: 2020-01-13 19:49:35,577: log_options() 'min_rating = 4'
+INFO: 2020-01-13 19:49:35,577: log_options() 'min_rating_enabled = False'
+INFO: 2020-01-13 19:49:35,577: log_options() 'min_size = 80'
+INFO: 2020-01-13 19:49:35,577: log_options() 'min_size_enabled = True'
+INFO: 2020-01-13 19:49:35,577: log_options() 'quota_enabled = False'
+INFO: 2020-01-13 19:49:35,577: log_options() 'quota_size = 500'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_authors = '
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_bg_opacity = 55'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_change_enabled = False'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_change_interval = 300'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_enabled = False'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_hpos = 100'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_max_length = 250'
+INFO: 2020-01-13 19:49:35,578: log_options() 'quotes_tags = '
+INFO: 2020-01-13 19:49:35,579: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2020-01-13 19:49:35,579: log_options() 'quotes_text_shadow = False'
+INFO: 2020-01-13 19:49:35,579: log_options() 'quotes_vpos = 40'
+INFO: 2020-01-13 19:49:35,579: log_options() 'quotes_width = 70'
+INFO: 2020-01-13 19:49:35,579: log_options() 'safe_mode = False'
+INFO: 2020-01-13 19:49:35,579: log_options() 'slideshow_custom_enabled = False'
+INFO: 2020-01-13 19:49:35,579: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
+INFO: 2020-01-13 19:49:35,579: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2020-01-13 19:49:35,579: log_options() 'slideshow_fade = 0.4'
+INFO: 2020-01-13 19:49:35,579: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2020-01-13 19:49:35,579: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2020-01-13 19:49:35,580: log_options() 'slideshow_monitor = All'
+INFO: 2020-01-13 19:49:35,580: log_options() 'slideshow_pan = 0.05'
+INFO: 2020-01-13 19:49:35,580: log_options() 'slideshow_seconds = 6.0'
+INFO: 2020-01-13 19:49:35,580: log_options() 'slideshow_sort_order = Random'
+INFO: 2020-01-13 19:49:35,583: set_visible() 'Showing status icon'
+INFO: 2020-01-13 19:49:35,583: log_options() 'slideshow_sources_enabled = True'
+INFO: 2020-01-13 19:49:35,584: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2020-01-13 19:49:35,586: log_options() 'slideshow_zoom = 0.2'
+INFO: 2020-01-13 19:49:35,620: log_options() 'smart_enabled = False'
+INFO: 2020-01-13 19:49:35,627: log_options() 'smart_notice_shown = True'
+INFO: 2020-01-13 19:49:35,629: log_options() 'smart_register_shown = False'
+INFO: 2020-01-13 19:49:35,630: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'desktoppr', 'Random wallpapers from Desktoppr.co'], [False, 'bing', 'Bing Photo of the Day'], [False, 'unsplash', 'High-resolution photos from Unsplash.com'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [False, 'earth', 'World Sunlight Map - live wallpaper from Die.net'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [False, 'folder', '/home/niel/DATA/wallpapers'], [False, 'chromeos', 'Chrome OS Wallpapers'], [False, 'earthview', 'Google Earth View Wallpapers'], [True, 'folder', '/home/niel/Dropbox/Apps/Desktoppr']]'
+INFO: 2020-01-13 19:49:35,630: log_options() 'stats_enabled = True'
+INFO: 2020-01-13 19:49:35,630: log_options() 'stats_notice_shown = True'
+INFO: 2020-01-13 19:49:35,630: log_options() 'sync_enabled = True'
+INFO: 2020-01-13 19:49:35,632: log_options() 'use_landscape_enabled = True'
+INFO: 2020-01-13 19:49:35,634: clear_prepared_queue() 'Clearing prepared queue'
+INFO: 2020-01-13 19:49:35,635: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:35,636: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2020-01-13 19:49:35,636: prepare_thread() 'Preparing some images'
+INFO: 2020-01-13 19:49:35,648: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:35,753: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:35,764: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:35,784: do_set_wp() 'Calling do_set_wp with /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg, time: 1578941375.7848415'
+INFO: 2020-01-13 19:49:35,790: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:35,859: update_indicator() 'Setting file info to: /home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg'
+INFO: 2020-01-13 19:49:35,868: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:36,028: prepare_thread() 'After search prepared buffer contains 93 images'
+INFO: 2020-01-13 19:49:36,029: prepare_thread() 'Prepared buffer contains 93 images'
+INFO: 2020-01-13 19:49:38,029: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:38,033: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:40,181: set_wallpaper() 'Calling set_wallpaper with /home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg'
+INFO: 2020-01-13 19:49:40,182: do_set_wp() 'Calling do_set_wp with /home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg, time: 1578941380.1821196'
+INFO: 2020-01-13 19:49:40,300: update_indicator() 'Setting file info to: /home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg'
+INFO: 2020-01-13 19:49:40,301: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:48,977: update_indicator() 'Setting file info to: /home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg'
+INFO: 2020-01-13 19:49:48,980: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:51,326: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-01-13 19:49:51,426: apply() 'Applying preferences'
+INFO: 2020-01-13 19:49:51,439: set_visible() 'Showing status icon'
+INFO: 2020-01-13 19:49:51,440: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2020-01-13 19:49:51,440: log_options() 'Loaded options:'
+INFO: 2020-01-13 19:49:51,440: log_options() 'change_enabled = True'
+INFO: 2020-01-13 19:49:51,441: log_options() 'change_interval = 1800'
+INFO: 2020-01-13 19:49:51,441: log_options() 'change_on_start = True'
+INFO: 2020-01-13 19:49:51,441: log_options() 'clipboard_enabled = False'
+INFO: 2020-01-13 19:49:51,441: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2020-01-13 19:49:51,441: log_options() 'clipboard_use_whitelist = True'
+INFO: 2020-01-13 19:49:51,441: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2020-01-13 19:49:51,441: log_options() 'clock_enabled = False'
+INFO: 2020-01-13 19:49:51,441: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2020-01-13 19:49:51,441: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2020-01-13 19:49:51,441: log_options() 'configfile = /home/niel/.config/variety/variety.conf'
+INFO: 2020-01-13 19:49:51,441: log_options() 'copyto_enabled = False'
+INFO: 2020-01-13 19:49:51,441: log_options() 'copyto_folder = Default'
+INFO: 2020-01-13 19:49:51,442: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2020-01-13 19:49:51,442: log_options() 'desired_color_enabled = False'
+INFO: 2020-01-13 19:49:51,442: log_options() 'download_folder = /home/niel/.config/variety/Downloaded'
+INFO: 2020-01-13 19:49:51,442: log_options() 'download_preference_ratio = 0.9'
+INFO: 2020-01-13 19:49:51,442: log_options() 'favorites_folder = /home/niel/.config/variety/Favorites'
+INFO: 2020-01-13 19:49:51,442: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2020-01-13 19:49:51,442: log_options() 'fetched_folder = /home/niel/.config/variety/Fetched'
+INFO: 2020-01-13 19:49:51,442: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2020-01-13 19:49:51,442: log_options() 'icon = Light'
+INFO: 2020-01-13 19:49:51,442: log_options() 'lightness_enabled = False'
+INFO: 2020-01-13 19:49:51,443: log_options() 'lightness_mode = 0'
+INFO: 2020-01-13 19:49:51,443: log_options() 'min_rating = 4'
+INFO: 2020-01-13 19:49:51,443: log_options() 'min_rating_enabled = False'
+INFO: 2020-01-13 19:49:51,443: log_options() 'min_size = 80'
+INFO: 2020-01-13 19:49:51,443: log_options() 'min_size_enabled = True'
+INFO: 2020-01-13 19:49:51,443: log_options() 'quota_enabled = False'
+INFO: 2020-01-13 19:49:51,443: log_options() 'quota_size = 500'
+INFO: 2020-01-13 19:49:51,443: log_options() 'quotes_authors = '
+INFO: 2020-01-13 19:49:51,443: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2020-01-13 19:49:51,443: log_options() 'quotes_bg_opacity = 55'
+INFO: 2020-01-13 19:49:51,443: log_options() 'quotes_change_enabled = False'
+INFO: 2020-01-13 19:49:51,443: log_options() 'quotes_change_interval = 300'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_enabled = False'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_favorites_file = /home/niel/.config/variety/favorite_quotes.txt'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_hpos = 100'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_max_length = 250'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_tags = '
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2020-01-13 19:49:51,444: log_options() 'quotes_text_shadow = False'
+INFO: 2020-01-13 19:49:51,445: log_options() 'quotes_vpos = 40'
+INFO: 2020-01-13 19:49:51,445: log_options() 'quotes_width = 70'
+INFO: 2020-01-13 19:49:51,445: log_options() 'safe_mode = False'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_custom_enabled = False'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_custom_folder = /home/niel/Pictures'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_fade = 0.4'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_monitor = All'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_pan = 0.05'
+INFO: 2020-01-13 19:49:51,445: log_options() 'slideshow_seconds = 6.0'
+INFO: 2020-01-13 19:49:51,446: log_options() 'slideshow_sort_order = Random'
+INFO: 2020-01-13 19:49:51,446: log_options() 'slideshow_sources_enabled = True'
+INFO: 2020-01-13 19:49:51,446: log_options() 'slideshow_zoom = 0.2'
+INFO: 2020-01-13 19:49:51,446: log_options() 'smart_enabled = False'
+INFO: 2020-01-13 19:49:51,446: log_options() 'smart_notice_shown = True'
+INFO: 2020-01-13 19:49:51,446: log_options() 'smart_register_shown = False'
+INFO: 2020-01-13 19:49:51,446: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'desktoppr', 'Random wallpapers from Desktoppr.co'], [False, 'bing', 'Bing Photo of the Day'], [False, 'unsplash', 'High-resolution photos from Unsplash.com'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [False, 'earth', 'World Sunlight Map - live wallpaper from Die.net'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [False, 'folder', '/home/niel/DATA/wallpapers'], [False, 'chromeos', 'Chrome OS Wallpapers'], [False, 'earthview', 'Google Earth View Wallpapers'], [True, 'folder', '/home/niel/Dropbox/Apps/Desktoppr']]'
+INFO: 2020-01-13 19:49:51,446: log_options() 'stats_enabled = True'
+INFO: 2020-01-13 19:49:51,446: log_options() 'stats_notice_shown = True'
+INFO: 2020-01-13 19:49:51,446: log_options() 'sync_enabled = True'
+INFO: 2020-01-13 19:49:51,446: log_options() 'use_landscape_enabled = True'
+INFO: 2020-01-13 19:49:51,446: reload_config() 'No need to clear prepared queue'
+INFO: 2020-01-13 19:49:51,447: update_indicator() 'Setting file info to: /home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg'
+INFO: 2020-01-13 19:49:51,448: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:51,453: prepare_thread() 'Prepared buffer contains 93 images'
+INFO: 2020-01-13 19:49:51,553: do_set_wp() 'Calling do_set_wp with /home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg, time: 1578941391.553225'
+INFO: 2020-01-13 19:49:51,578: update_indicator() 'Setting file info to: /home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg'
+INFO: 2020-01-13 19:49:51,581: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2020-01-13 19:49:53,453: trigger_download() 'Triggering download thread to check if download needed'

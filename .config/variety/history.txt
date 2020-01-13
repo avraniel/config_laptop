@@ -1,6 +1,9 @@
 0
-/home/niel/DATA/wallpapers/city_nightscape__3840_x_2160__hellsjuggernaut-2019-11-07-1633.jpg
-/home/niel/DATA/wallpapers/organizer-791939-2019-12-01-0850.jpg
+/home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg
+/home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg
+/home/niel/.config/variety/Downloaded/Earth View/Mitsinjo, Madagascar (ID-1746).jpg
+/home/niel/.config/variety/Downloaded/Chrome OS Wallpapers/20140527-165607_earth-035_high_resolution.jpg
+/home/niel/.config/variety/Downloaded/Desktoppr/doctor_who_-_all_of_them__2.jpg
 /usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg
 /usr/share/backgrounds/arcolinux/Protocol-19-Glaucous-Blue-1920x1080-HD.jpg
 /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg
