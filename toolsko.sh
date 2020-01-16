@@ -125,6 +125,7 @@ yay -S dropbox --noconfirm --needed
 yay -S papirus-icon-theme --noconfirm --needed
 yay -S arc-icon-theme --noconfirm --needed
 yay -S adapta-gtk-theme --noconfirm --needed
+yay -S oh-my-bash-git --noconfirm --needed
 
 #yay -S breeze-obsidian-cursor-theme --noconfirm --needed
 
@@ -140,7 +141,7 @@ yay -S nvidia-340xx-lts --noconfirm --needed
 cp -Rf ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger} ~/.config
 cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
-cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
+sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
 
 ~/.bin/main/700-fun-apps-for-screenshots-v6.sh
 
