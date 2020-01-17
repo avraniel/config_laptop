@@ -1,2 +1,2 @@
-alias myconfig="cp -Rfv ~/config_laptop/.config/{plank,thunar,neofetch,openbox,variety,ranger,polybar} ~/.config && cp -Rfv ~/config_laptop/.config/picom.conf ~/.config"
+alias myconfig="sudo cp -Rfv ~/config_laptop/.config/{plank,thunar,neofetch,openbox,variety,xfce4,ranger,polybar} ~/.config && cp -Rfv ~/config_laptop/.config/picom.conf ~/.config"
 
