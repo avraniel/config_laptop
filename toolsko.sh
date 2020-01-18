@@ -126,6 +126,7 @@ yay -S papirus-icon-theme --noconfirm --needed
 yay -S arc-icon-theme --noconfirm --needed
 yay -S adapta-gtk-theme --noconfirm --needed
 yay -S oh-my-bash-git --noconfirm --needed
+yay -S oh-my-zsh-git --noconfirm --needed
 
 #yay -S breeze-obsidian-cursor-theme --noconfirm --needed
 
