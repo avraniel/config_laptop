@@ -273,7 +273,7 @@ offset-y = 0%
 radius = 0.0
 fixed-center = true
 bottom = false
-separator = |
+separator = <
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -305,8 +305,8 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = ewmh xwindow
-modules-center = kernel
-modules-right =  memory2 cpu2 date
+modules-center = date
+modules-right =  memory2 cpu2 temperature2
 
 tray-detached = false
 tray-offset-x = 0
@@ -1190,16 +1190,20 @@ label = Cpu %percentage:3%%
 ;https://github.com/jaagr/polybar/wiki/Module:-date
 type = internal/date
 ; Seconds to sleep between updates
-interval = 5
+interval = 0
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = " %Y-%m-%d%"
-date-alt = " %d-%m-%Y"
-time = %H:%M
-time-alt = %H:%M
-format-prefix = " "
+:date = " %Y-%m-%d%""
+;date-alt = " %d-%m-%Y"
+;date = %m-%d-%Y
+date-alt = %A, %d %B %Y
+;time-alt = %r
+time = %r
+;time = %H:%M:%S
+;time-alt = %H:%M:%S
+;format-prefix = " "
 format-prefix-foreground = #c1941a
-format-underline = #c1941a
+;format-underline = #c1941a
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 label = %date% %time%
