@@ -136,10 +136,11 @@ yay -S paper-icon-theme --noconfirm --needed
 yay -S zafiro-icon-theme --noconfirm --needed
 yay -S xcursor-simpleandsoft --noconfirm --needed
 yay -S popcorntime-bin --noconfirm --needed
-yay -S nvidia-340xx-lts --noconfirm --needed
+yay -S nvidia-340xx-lts --needed
 
 cp -Rf ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger} ~/.config
 cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
+cp ~/config_laptop/.config/.zshrc ~/
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
 sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
 
