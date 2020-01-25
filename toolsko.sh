@@ -145,6 +145,8 @@ cp ~/config_laptop/.config/.zshrc ~/
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
 sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
 
+sudo chsh $USER -s /bin/zsh && echo 'Now log out.'
+
 ~/.bin/main/700-fun-apps-for-screenshots-v6.sh
 
 cp ~/.bashrc-latest ~/.bashrc && source ~/.bashrc && sudo cp /etc/skel/.bashrc-latest /etc/skel/.bashrc
