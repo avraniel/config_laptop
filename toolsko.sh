@@ -149,6 +149,6 @@ sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf
 
 cp ~/.bashrc-latest ~/.bashrc && source ~/.bashrc && sudo cp /etc/skel/.bashrc-latest /etc/skel/.bashrc
 
-sudo chsh niel -s /bin/bash && echo '\''Now log out.'\
+sudo chsh niel -s /bin/zsh
 
 sudo reboot
