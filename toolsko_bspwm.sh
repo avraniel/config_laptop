@@ -143,7 +143,7 @@ cp -Rf ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger}
 cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
 cp ~/config_laptop/.config/.zshrc ~/
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
-cp ~/config_lapop/dog ~/.bin 
+cp ~/config_laptop/dog ~/.bin 
 #sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
 
 sudo chsh $USER -s /bin/zsh && echo 'Now log out.'
@@ -152,6 +152,6 @@ sudo chsh $USER -s /bin/zsh && echo 'Now log out.'
 
 #cp ~/.bashrc-latest ~/.bashrc && source ~/.bashrc && sudo cp /etc/skel/.bashrc-latest /etc/skel/.bashrc
 
-sudo chsh niel -s /bin/zsh
+#sudo chsh niel -s /bin/zsh
 
 sudo reboot
