@@ -28,11 +28,11 @@ read input
 
 # Committing to the local repository with a message containing the time details and commit text
 
-git commit -m "$input"
+git commit -a "$input"
 
 # Push the local files to github
 
-git push -u origin master
+git push -f origin master
 
 
 echo "################################################################"
