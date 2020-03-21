@@ -128,7 +128,7 @@ yay -S adapta-gtk-theme --noconfirm --needed
 yay -S oh-my-bash-git --noconfirm --needed
 yay -S oh-my-zsh-git --noconfirm --needed
 
-#yay -S breeze-obsidian-cursor-theme --noconfirm --needed
+yay -S breeze-obsidian-cursor-theme --noconfirm --needed
 
 yay -S faba-icon-theme --noconfirm --needed
 yay -S halo-icons-git --noconfirm --needed
@@ -137,21 +137,22 @@ yay -S paper-icon-theme --noconfirm --needed
 yay -S zafiro-icon-theme --noconfirm --needed
 yay -S xcursor-simpleandsoft --noconfirm --needed
 yay -S popcorntime-bin --noconfirm --needed
-yay -S nvidia-340xx-lts --needed
+#yay -S nvidia-340xx-lts --needed
 
 cp -Rf ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger} ~/.config
 cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
+cp -Rf ~/config_laptop/.bashrc ~/.bashrc
 cp ~/config_laptop/.config/.zshrc ~/
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
 cp -Rf ~/config_laptop/dog ~/.bin 
-#sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
+sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
 
-sudo chsh $USER -s /bin/zsh && echo 'Now log out.'
+#sudo chsh $USER -s /bin/zsh && echo 'Now log out.'
 
 ~/.bin/main/700-fun-apps-for-screenshots-v6.sh
 
 #cp ~/.bashrc-latest ~/.bashrc && source ~/.bashrc && sudo cp /etc/skel/.bashrc-latest /etc/skel/.bashrc
 
-sudo chsh niel -s /bin/zsh
+#sudo chsh niel -s /bin/zsh
 
 sudo reboot
