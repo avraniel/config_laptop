@@ -56,6 +56,7 @@ cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
 cp -Rf ~/config_laptop/.bashrc ~/.bashrc
 cp ~/config_laptop/.config/.zshrc ~/
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
+cp -Rf ~/config_laptop/.config/autostart ~/.config/openbox
 sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
 
 
