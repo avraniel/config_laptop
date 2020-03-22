@@ -431,8 +431,8 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = bspwm xwindow
-modules-center = kernel
-modules-right = pavolume memory2 cpu2 date powermenu
+modules-center = date
+modules-right = pavolume memory2 cpu2
 
 tray-detached = false
 tray-offset-x = 0
@@ -1864,16 +1864,3 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 ###############################################################################
-
-[module/powermenu]
-type = custom/script
-exec = echo ""
-!;exec = echo " "
-interval = 1
-tail = true
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-prefix-foreground = #738adb
-format-underline = ${colors.foreground-alt}
-click-left = oblogout &
-label = %output%
