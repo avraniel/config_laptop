@@ -51,12 +51,12 @@ yay -S xcursor-simpleandsoft --noconfirm --needed
 yay -S popcorntime-bin --noconfirm --needed
 #yay -S nvidia-340xx-lts --needed
 
-cp -Rf ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger} ~/.config
+cp -Rfv ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger} ~/.config
 cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
-cp -Rf ~/config_laptop/.bashrc ~/.bashrc
+cp -Rf ~/config_laptop/.config/.bashrc ~/.bashrc
 cp ~/config_laptop/.config/.zshrc ~/
-cp -RF ~/config_laptop/.config/.cache ~/.cache
-cp -Rf ~/config_laptop/.config/rofi ~/.config/rofi
+cp -Rf ~/config_laptop/.config/.cache ~/.cache
+cp -Rf ~/config_laptop/.config/rofi ~/.config/
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
 cp -Rf ~/config_laptop/.config/autostart ~/.config/openbox
 sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
