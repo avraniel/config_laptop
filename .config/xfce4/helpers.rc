@@ -1,5 +1,4 @@
 FileManager=Thunar
-TerminalEmulator=urxvt
+TerminalEmulator=custom-TerminalEmulator
 WebBrowser=firefox
 MailReader=evolution
-
