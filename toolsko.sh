@@ -27,7 +27,7 @@ sudo pacman -S --noconfirm --needed vivaldi-ffmpeg-codecs
 sudo pacman -S --noconfirm --needed vivaldi-widevine
 
 yay -S zoom --noconfirm --needed
-
+sudo pacman -S arcolinux-teamviewer --noconfirm --needed
 sudo pacman -S discord --noconfirm --needed
 sudo pacman -S telegram-desktop --noconfirm --needed
 yay -S blockify-git --noconfirm --needed
@@ -55,6 +55,8 @@ cp -Rf ~/config_laptop/.config/{termite,neofetch,polybar,openbox,variety,ranger}
 cp ~/config_laptop/.config/.bashrc-personal ~/.bashrc-personal
 cp -Rf ~/config_laptop/.bashrc ~/.bashrc
 cp ~/config_laptop/.config/.zshrc ~/
+cp -RF ~/config_laptop/.config/.cache ~/.cache
+cp -Rf ~/config_laptop/.config/rofi ~/.config/rofi
 cp ~/config_laptop/.config/pipes-diagonal ~/.bin
 cp -Rf ~/config_laptop/.config/autostart ~/.config/openbox
 sudo cp -Rf ~/config_laptop/.config/lightdm.conf /etc/lightdm/lightdm.conf 
