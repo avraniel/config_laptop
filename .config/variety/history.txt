@@ -1,4 +1,9 @@
 0
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-pnr9jn.png
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-83ow2y.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-4226v6.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-6kw8v7.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-p8poqm.jpg
 /home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-4dpel4.jpg
 /home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-kwqk56.png
 /home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-kw2rm1.jpg
