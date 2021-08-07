@@ -1,0 +1,23 @@
+alias myconfig="sudo cp -Rfv ~/DATA/config/{termite,glava,arcologout,neofetch,polybar,openbox,rofi,spicetify,plank,xfce4,ranger} ~/.config"
+alias reloadbash="sudo cp -Rfv ~/DATA/config/.bashrc ~/.bashrc"
+alias ku="/home/niel/Downloads/files-main/hue.sh"
+alias micon="pactl load-module module-loopback latency_msec=1"
+alias micoff="pactl unload-module module-loopback"
+alias oras="sudo timedatectl set-ntp on && ~/.config/polybar/./launch.sh"
+alias seed='ssh arcolinux@bike.seedhost.eu'
+alias downgrada="downgrade --ala-url 'https://bike.seedhost.eu/arcolinux/'"
+# install powerpill and paru-bin
+alias pu="sudo pacman -Sy && sudo powerpill -Su && paru -Su"
+alias logitech="v4l2-ctl -d /dev/video0 --set-ctrl=focus_auto=0"
+alias cyan="~/.config/polybar/color/poly_cyan/launch.sh"
+alias blue="~/.config/polybar/color/poly_blue/launch.sh"
+alias green="~/.config/polybar/color/poly_green/launch.sh"
+alias orange="~/.config/polybar/color/poly_orange/launch.sh"
+alias yellow="~/.config/polybar/color/poly_yellow/launch.sh"
+alias white="~/.config/polybar/color/poly_white/launch.sh"
+alias magenta="~/.config/polybar/color/poly_magenta/launch.sh"
+alias light="wal --theme random_light"
+alias dark="wal --theme random_dark"
+
+
+(cat ~/.cache/wal/sequences &)

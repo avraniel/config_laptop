@@ -1,9 +1,19 @@
 0
-/home/niel/Dropbox/Apps/Desktoppr/the_city_of_light_3840x2160__li_sung-2019-11-26-1640.jpg
-/home/niel/.config/variety/Downloaded/Earth View/Diego Garcia, British Indian Ocean Territory (ID-5616).jpg
-/home/niel/.config/variety/Downloaded/Earth View/Mitsinjo, Madagascar (ID-1746).jpg
-/home/niel/.config/variety/Downloaded/Chrome OS Wallpapers/20140527-165607_earth-035_high_resolution.jpg
-/home/niel/.config/variety/Downloaded/Desktoppr/doctor_who_-_all_of_them__2.jpg
-/usr/share/backgrounds/arcolinux/yosemite-mountains-3250x1828.jpg
-/usr/share/backgrounds/arcolinux/Protocol-19-Glaucous-Blue-1920x1080-HD.jpg
-/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-4dpel4.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-kwqk56.png
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-kw2rm1.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-4928dw.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-zm9zlv.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-4928dw.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-wqq2o7.png
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-83ow2y.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-kw5yy7.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-1kqqrv.png
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-nzymgv.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-k98jl6.png
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-2e73o6.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-p8lwe3.png
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-p8poqm.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-y87j7d.png
+/usr/share/backgrounds/arcolinux/harddisk-5184-3456.jpg
+/home/niel/.config/variety/Downloaded/wallhaven_minimalism/wallhaven-6kw8v7.jpg
