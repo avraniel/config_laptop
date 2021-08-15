@@ -101,6 +101,10 @@
         <value type="string" value="clipman"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="ViberPC"/>
+        <value type="string" value="zoom"/>
         <value type="string" value="TelegramDesktop"/>
         <value type="string" value="discord1"/>
         <value type="string" value="variety"/>
@@ -114,7 +118,7 @@
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="pragha;QtWebFlix;QtWebFlix-Video;qtwebflix.instance5839;spotify"/>
+      <property name="mpris-players" type="string" value="chromium.instance4383;chromium.instance4629;pragha;QtWebFlix;QtWebFlix-Video;qtwebflix.instance5839;spotify;vlc"/>
     </property>
     <property name="plugin-1" type="string" value="battery"/>
   </property>

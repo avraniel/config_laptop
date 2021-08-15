@@ -1,5 +1,5 @@
 favorites=arcolinux-welcome-app.desktop,arcolinux-tweak-tool.desktop,firefox.desktop,thunar.desktop,xfce4-terminal.desktop,conkyzen.desktop
-recent=thunar.desktop,xfce-mouse-settings.desktop,xfce-ui-settings.desktop,xfce-session-settings.desktop,xfce-keyboard-settings.desktop,Alacritty.desktop,cpu-x.desktop,guvcview.desktop,qvidcap.desktop,telegramdesktop.desktop
+recent=xfce-keyboard-settings.desktop,xfce4-power-manager-settings.desktop,thunar.desktop,xfce-mouse-settings.desktop,xfce-ui-settings.desktop,xfce-session-settings.desktop,Alacritty.desktop,cpu-x.desktop,guvcview.desktop,qvidcap.desktop
 button-title=ArcoLinux\ \ 
 button-icon=start-here-arcolinux
 button-single-row=false
